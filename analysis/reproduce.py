@@ -173,25 +173,32 @@ def plots(output,rows,timing,ablation):
   ax.set_title(title);ax.set_xticks(range(4),['M-N','M-B','I-N','I-B']);ax.grid(axis='y',alpha=.15)
  handles=[Line2D([],[],marker='' if i==4 else MARKERS[i],ls='--' if i==4 else '',color=COLORS[i],label=NAMES[i]) for i in range(8)]
  fig.legend(handles=handles,ncol=2,loc='upper center',fontsize=7);finish(fig,'fig08_performance')
- fig,axes=plt.subplots(2,2,figsize=(4.2,4.3));fig.subplots_adjust(top=.73,hspace=.5,wspace=.32,bottom=.12,left=.15)
+ fig,axes=plt.subplots(2,2,figsize=(4.2,4.8));fig.subplots_adjust(top=.74,hspace=.90,wspace=.38,bottom=.14,left=.15,right=.98)
  for ax,cell in zip(axes.flat,CELLS):
   for j,m in enumerate(METHODS):
    a=np.sort([float(r['decision_ms']) for r in timing if r['cell']==cell and r['method']==m]);ax.plot(a,np.arange(1,len(a)+1)/len(a),color=COLORS[j],lw=.8,ls=['-','--','-.',':','--','--','-.',':'][j])
   ax.axvline(100,color='grey',ls='--',lw=.7);ax.set_xscale('log');ax.set_ylim(0,1);ax.set_title(cell.replace('_',' '));ax.set_xlabel('Decision latency (ms) ↓');ax.set_ylabel('CDF')
- fig.legend(handles=handles,ncol=2,loc='upper center',fontsize=7);finish(fig,'fig09_latency')
+ cdf_handles=[Line2D([],[],ls=['-','--','-.',':','--','--','-.',':'][i],color=COLORS[i],label=NAMES[i]) for i in range(8)]
+ fig.legend(handles=cdf_handles,ncol=2,loc='upper center',fontsize=7);finish(fig,'fig09_latency')
  # Figure 4: fixed-controller horizon sensitivity, computed from trajectories and timing.
  tim={(r['cell'],r['condition']):r for r in load('ablations/all_timing.csv') if r['scope']=='isolated_decision_latency'}
- fig,axes=plt.subplots(2,2,figsize=(4.3,4.0));fig.subplots_adjust(top=.85,hspace=.5,wspace=.4,bottom=.13,left=.15)
+ fig,axes=plt.subplots(2,2,figsize=(4.3,4.5));fig.subplots_adjust(top=.78,hspace=.75,wspace=.4,bottom=.14,left=.15,right=.98)
  for ci,c in enumerate(CELLS):
   for risk,style in [('risk','-'),('expectation','--')]:
    for pi,key in enumerate(['smooth_deficit_m','completion_time_s','jerk_rms_mps3','latency']):
-    means=[]
+    means=[];halves=[]
     for n in [10,15,20,30]:
      cond=f'fixed_{risk}_n{n}'
-     means.append(float(tim[c,cond]['p99_ms']) if key=='latency' else float(matrix(ablation,c,[cond],key).mean()))
-    axes.flat[pi].plot([1,1.5,2,3],means,color=COLORS[ci],ls=style,marker=MARKERS[ci],ms=3,lw=.8,label=c if risk=='risk' else None)
+     samples=None if key=='latency' else matrix(ablation,c,[cond],key)[0]
+     means.append(float(tim[c,cond]['p99_ms']) if key=='latency' else float(samples.mean()))
+     halves.append(0. if samples is None else float(t.ppf(.975,127)*samples.std(ddof=1)/np.sqrt(128)))
+    axes.flat[pi].plot([1,1.5,2,3],means,color=COLORS[ci],ls=style,marker=MARKERS[ci],ms=3,lw=.8,label=['M-N','M-B','I-N','I-B'][ci] if risk=='risk' else None)
+    if risk=='risk' and key!='latency':axes.flat[pi].fill_between([1,1.5,2,3],np.array(means)-halves,np.array(means)+halves,color=COLORS[ci],alpha=.1)
  for ax,title in zip(axes.flat,['SAT deficit (m) ↓','Task time (s) ↓','RMS jerk (m/s³) ↓','Isolated p99 (ms) ↓']):ax.set_title(title);ax.set_xlabel('Horizon (s)')
- axes.flat[3].axhline(100,color='grey',ls=':',lw=.7);fig.legend(*axes.flat[0].get_legend_handles_labels(),loc='upper center',ncol=2,fontsize=7);finish(fig,'fig04_horizon')
+ axes.flat[3].axhline(100,color='grey',ls=':',lw=.7)
+ horizon_handles,horizon_labels=axes.flat[0].get_legend_handles_labels()
+ horizon_handles += [Line2D([],[],color='black',ls='-',label='Risk-aware'),Line2D([],[],color='black',ls='--',label='Expectation')]
+ fig.legend(handles=horizon_handles,ncol=3,loc='upper center',fontsize=8);finish(fig,'fig04_horizon')
  # Figure 6: action ablations; Figure 7: conditional multiplicity-adjusted component effects.
  fig,axes=plt.subplots(2,2,figsize=(4.3,4));fig.subplots_adjust(top=.85,hspace=.5,wspace=.4,bottom=.13,left=.15)
  variants=[('Joint',arm_ids('111')),('Weights-only*',[f'action_weights_only_seed{s}' for s in (1,2,3)]),('Margin-only',[f'action_cbf_only_seed{s}' for s in (1,2,3)]),('Fixed risk',arm_ids('100'))]
