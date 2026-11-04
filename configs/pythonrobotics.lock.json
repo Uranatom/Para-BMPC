@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/AtsushiSakai/PythonRobotics",
+  "commit": "02141a6814d25e8b15e1a65a1d0328a8efc2b4a5",
+  "license": "MIT",
+  "paper": "https://doi.org/10.1109/ROBOT.2010.5509799",
+  "source_sha256": {
+    "LICENSE": "3dd722dec03670d0419e69756034f2223a84be8932315ada8cd59c76402c75c3",
+    "PathPlanning/FrenetOptimalTrajectory/cartesian_frenet_converter.py": "2cecccc4eba703e227d4df115b183264c4a70be4e988577f26160e98eaeda2db",
+    "PathPlanning/FrenetOptimalTrajectory/frenet_optimal_trajectory.py": "2ca7b0e2ca5f5d86ae65a8798c3132f44896f8879cdc7f4516b9c27d3a13c141",
+    "PathPlanning/QuinticPolynomialsPlanner/quintic_polynomials_planner.py": "97c08c262ce6a79788aed0c5b23eb57c5d1733ddb496dd1d2d2fe74ff1bddbc5",
+    "PathPlanning/CubicSpline/cubic_spline_planner.py": "9276a09388d82c01f314822a02dee4c4ec72192219972ca71207d2b3314e3261",
+    "PathPlanning/CubicSpline/spline_continuity.py": "596938026719c34d23804f50cae757b931a46fe90f6bc3e21be36fcdc36b0c4e",
+    "PathPlanning/CubicSpline/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/angle.py": "471212517cbe8e8e5bcf3a691c1efb1d8ea9d9e1271c09e60b2e12435bf6c990",
+    "utils/plot.py": "ce61c7cfa774bcb948eb9ada1bee69f4ad559bc48d213a090d16162d1091a141",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "scope": "Independent established reference implementation, not a Werling-author repository. Native polynomial and spline classes are executed unchanged."
+}

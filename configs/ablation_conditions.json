@@ -1,0 +1,297 @@
+[
+  {
+    "id": "fixed_risk_n10",
+    "stage": "action",
+    "kind": "fixed",
+    "risk": true,
+    "horizon": 10,
+    "seed": null
+  },
+  {
+    "id": "action_joint_seed1",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "joint",
+    "seed": 1,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_joint_seed2",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "joint",
+    "seed": 2,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_joint_seed3",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "joint",
+    "seed": 3,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_weights_only_seed1",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "weights_only",
+    "seed": 1,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_weights_only_seed2",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "weights_only",
+    "seed": 2,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_weights_only_seed3",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "weights_only",
+    "seed": 3,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_cbf_only_seed1",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "cbf_only",
+    "seed": 1,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_cbf_only_seed2",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "cbf_only",
+    "seed": 2,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "action_cbf_only_seed3",
+    "stage": "action",
+    "kind": "action",
+    "adaptation": "cbf_only",
+    "seed": 3,
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "fixed_expectation_n10",
+    "stage": "structure",
+    "kind": "fixed",
+    "risk": false,
+    "horizon": 10,
+    "seed": null
+  },
+  {
+    "id": "structure_001_seed1",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "001",
+    "seed": 1,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_001_seed2",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "001",
+    "seed": 2,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_001_seed3",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "001",
+    "seed": 3,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_010_seed1",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "010",
+    "seed": 1,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_010_seed2",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "010",
+    "seed": 2,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_010_seed3",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "010",
+    "seed": 3,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_011_seed1",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "011",
+    "seed": 1,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_011_seed2",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "011",
+    "seed": 2,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_011_seed3",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "011",
+    "seed": 3,
+    "adaptation": "joint",
+    "risk": false,
+    "horizon": 10
+  },
+  {
+    "id": "structure_101_seed1",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "101",
+    "seed": 1,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "structure_101_seed2",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "101",
+    "seed": 2,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "structure_101_seed3",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "101",
+    "seed": 3,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "structure_110_seed1",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "110",
+    "seed": 1,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "structure_110_seed2",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "110",
+    "seed": 2,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "structure_110_seed3",
+    "stage": "structure",
+    "kind": "structure",
+    "arm": "110",
+    "seed": 3,
+    "adaptation": "joint",
+    "risk": true,
+    "horizon": 10
+  },
+  {
+    "id": "fixed_expectation_n15",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": false,
+    "horizon": 15,
+    "seed": null
+  },
+  {
+    "id": "fixed_risk_n15",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": true,
+    "horizon": 15,
+    "seed": null
+  },
+  {
+    "id": "fixed_expectation_n20",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": false,
+    "horizon": 20,
+    "seed": null
+  },
+  {
+    "id": "fixed_risk_n20",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": true,
+    "horizon": 20,
+    "seed": null
+  },
+  {
+    "id": "fixed_expectation_n30",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": false,
+    "horizon": 30,
+    "seed": null
+  },
+  {
+    "id": "fixed_risk_n30",
+    "stage": "horizon",
+    "kind": "fixed",
+    "risk": true,
+    "horizon": 30,
+    "seed": null
+  }
+]

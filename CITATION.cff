@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript when using these review materials."
+type: software
+title: "Para-BMPC review materials"
+version: "0.1.0"
+date-released: "2026-11-04"
+repository-code: "https://github.com/Uranatom/Para-BMPC"
+authors:
+  - family-names: Cheng
+    given-names: Xin
+  - family-names: He
+    given-names: Yinxi
+  - family-names: Zhou
+    given-names: Jingmei
+  - family-names: Zhang
+    given-names: Ronghui
+  - family-names: Zhang
+    given-names: Han
+  - family-names: Hu
+    given-names: Chuan

@@ -1,0 +1,15 @@
+{
+  "method": "era",
+  "shared_prefix": 1,
+  "tail_mass": 0.6,
+  "iterations": 25,
+  "outer_iterations": 6,
+  "rho": 100000.0,
+  "constraint_penalty": 1000000.0,
+  "heading_weight": 32.0,
+  "lateral_weight": 2.0,
+  "steering_weight": 2.0,
+  "terminal_scale": 3.0,
+  "road_buffer_m": 0.2,
+  "sat_target_m": 2.1
+}

@@ -1,0 +1,19 @@
+Copyright (c) 2026 The authors of Para-BMPC.
+
+Review-evaluation permission for author-owned materials
+
+Authorized recipients of this private review-stage repository are permitted to
+inspect, execute and locally modify the author-owned code and data solely for
+peer review and verification of the associated manuscript. Public redistribution
+or publication of author-owned materials from this review release requires the
+authors' permission. All other rights are reserved until a subsequent public
+release specifies its open-source terms.
+
+This permission does not replace or restrict licenses on third-party components.
+In particular, the included PythonRobotics files retain their MIT license and
+copyright notice. Independently installed dependencies retain their own terms.
+CarSim is not included and requires a separate license.
+
+Materials are provided as-is, without warranty of fitness or safety. The code is
+a research artifact; empirical results do not provide real-vehicle safety or
+hard real-time guarantees.

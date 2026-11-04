@@ -1,0 +1,13 @@
+{
+  "primary_trajectories": 6144,
+  "isolated_replays": 96,
+  "seed_counts": {
+    "pid_sac": 3,
+    "pid_ddpg": 2,
+    "pid_ppo": 2
+  },
+  "conditional_starts_per_cell": 128,
+  "seed_weights": "equal",
+  "latency_table": "mean of seed-specific statistics",
+  "latency_CDF": "pool isolated decisions across seeds"
+}

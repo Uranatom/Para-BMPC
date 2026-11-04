@@ -1,0 +1,5143 @@
+{
+  "cells": [
+    "merge_nominal",
+    "merge_stress",
+    "intersection_nominal",
+    "intersection_stress"
+  ],
+  "cell_labels": [
+    "M-N",
+    "M-B",
+    "I-N",
+    "I-B"
+  ],
+  "values": {
+    "merge_nominal|Joint": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.69087757941907,
+          "lower": 11.526747536202432,
+          "upper": 11.855007622635707,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0898582858161986,
+          "lower": 0.0707504852704606,
+          "upper": 0.10896608636193661,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.045052083333334,
+          "lower": 5.945003918409243,
+          "upper": 6.1451002482574255,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.5821476272296953,
+          "lower": 3.4188513638368523,
+          "upper": 3.7454438906225382,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9823707593604922,
+          "lower": 3.5573774237475293,
+          "upper": 4.407364094973455,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23604818304714842,
+          "lower": 0.19964440514253812,
+          "upper": 0.2724519609517587,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3240840497897137,
+          "lower": 2.2340033229206,
+          "upper": 2.4141647766588274,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Weights-only": {
+      "conditions": [
+        "action_weights_only_seed1",
+        "action_weights_only_seed2",
+        "action_weights_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.48627789882279,
+          "lower": 11.294906577824017,
+          "upper": 11.677649219821562,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.18888199416416165,
+          "lower": 0.14898742680758678,
+          "upper": 0.22877656152073653,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.048958333333334,
+          "lower": 5.938782767812557,
+          "upper": 6.159133898854111,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.6334363922038904,
+          "lower": 3.4816398371280757,
+          "upper": 3.785232947279705,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.002548763960942443,
+          "lower": 0.0008235774538574174,
+          "upper": 0.004273950468027469,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8336653616279364,
+          "lower": 3.3864039043574095,
+          "upper": 4.280926818898464,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2388398209460952,
+          "lower": 0.2033649278176064,
+          "upper": 0.274314714074584,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3660984357300974,
+          "lower": 2.254808010817055,
+          "upper": 2.47738886064314,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Margin-only": {
+      "conditions": [
+        "action_cbf_only_seed1",
+        "action_cbf_only_seed2",
+        "action_cbf_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.647334535559509,
+          "lower": 11.486727253217653,
+          "upper": 11.807941817901364,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08768907892113781,
+          "lower": 0.06899492081892379,
+          "upper": 0.10638323702335183,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.02109375,
+          "lower": 5.9215570926320495,
+          "upper": 6.120630407367951,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.714159681473879,
+          "lower": 3.55885552840413,
+          "upper": 3.869463834543628,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 8.012820512820513e-05,
+          "lower": -7.84310524583751e-05,
+          "upper": 0.00023868746271478534,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9888317945102845,
+          "lower": 3.564600910438247,
+          "upper": 4.413062678582322,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2337366553279642,
+          "lower": 0.19800010389200345,
+          "upper": 0.26947320676392494,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.32052738362753,
+          "lower": 2.228971692019064,
+          "upper": 2.412083075235996,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Fixed risk": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.501060406191577,
+          "lower": 11.316412690848818,
+          "upper": 11.685708121534336,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.1901163824648014,
+          "lower": 0.1497259206789783,
+          "upper": 0.23050684425062448,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.025,
+          "lower": 5.917539623319646,
+          "upper": 6.1324603766803545,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.658907997565488,
+          "lower": 3.5129796010808807,
+          "upper": 3.8048363940500955,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.002444569430933378,
+          "lower": 0.0006829668115416645,
+          "upper": 0.0042061720503250915,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8329812325537205,
+          "lower": 3.3855002686384057,
+          "upper": 4.280462196469035,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2404312843542436,
+          "lower": 0.2047510244791347,
+          "upper": 0.27611154422935247,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3505755492229676,
+          "lower": 2.2427227428489696,
+          "upper": 2.4584283555969657,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 000": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.485284396899203,
+          "lower": 11.289522738472108,
+          "upper": 11.681046055326298,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.19459048164411946,
+          "lower": 0.1531947666516377,
+          "upper": 0.23598619663660123,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.0375000000000005,
+          "lower": 5.926880625131247,
+          "upper": 6.148119374868754,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.641231814616586,
+          "lower": 3.494952040970266,
+          "upper": 3.7875115882629062,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0037089489772896916,
+          "lower": 0.0015312050491097552,
+          "upper": 0.005886692905469628,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8266430981457233,
+          "lower": 3.3783422340170004,
+          "upper": 4.274943962274446,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23966330281172704,
+          "lower": 0.20479226088624478,
+          "upper": 0.2745343447372093,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3819326496407958,
+          "lower": 2.267175254164766,
+          "upper": 2.4966900451168255,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 001": {
+      "conditions": [
+        "structure_001_seed1",
+        "structure_001_seed2",
+        "structure_001_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.655676738083407,
+          "lower": 11.49851568419679,
+          "upper": 11.812837791970026,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.09815793152994652,
+          "lower": 0.07716727062351676,
+          "upper": 0.11914859243637628,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.018750000000001,
+          "lower": 5.919202913224062,
+          "upper": 6.118297086775939,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.687840411138951,
+          "lower": 3.539612856560133,
+          "upper": 3.8360679657177688,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9684298532083635,
+          "lower": 3.5413719948752362,
+          "upper": 4.395487711541491,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23229908834859858,
+          "lower": 0.1968635360756419,
+          "upper": 0.2677346406215553,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3349083930325594,
+          "lower": 2.241728274390269,
+          "upper": 2.42808851167485,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 010": {
+      "conditions": [
+        "structure_010_seed1",
+        "structure_010_seed2",
+        "structure_010_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.534461028654649,
+          "lower": 11.338308686406462,
+          "upper": 11.730613370902836,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.1966507621579165,
+          "lower": 0.15490447053619893,
+          "upper": 0.23839705377963405,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.051041666666666,
+          "lower": 5.941947563333122,
+          "upper": 6.160135770000211,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.5213152893493516,
+          "lower": 3.368666744217858,
+          "upper": 3.673963834480845,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.003613741479574115,
+          "lower": 0.0013161320803881183,
+          "upper": 0.005911350878760112,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8227192607397837,
+          "lower": 3.374148995269403,
+          "upper": 4.271289526210165,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.24065741616435748,
+          "lower": 0.20511685974441463,
+          "upper": 0.27619797258430034,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.379766881207415,
+          "lower": 2.2686910490995245,
+          "upper": 2.4908427133153057,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 011": {
+      "conditions": [
+        "structure_011_seed1",
+        "structure_011_seed2",
+        "structure_011_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.708100963417657,
+          "lower": 11.547496468371786,
+          "upper": 11.868705458463527,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.09409570482636333,
+          "lower": 0.07413445926368169,
+          "upper": 0.11405695038904497,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.039322916666666,
+          "lower": 5.940080961025876,
+          "upper": 6.138564872307457,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.56241596238875,
+          "lower": 3.4043605785346025,
+          "upper": 3.7204713462428978,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9737478476017714,
+          "lower": 3.547823693744795,
+          "upper": 4.399672001458748,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23322555162325012,
+          "lower": 0.19711854058440242,
+          "upper": 0.2693325626620978,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.337321120483712,
+          "lower": 2.2469454752838245,
+          "upper": 2.4276967656835997,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 100": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.501060406191577,
+          "lower": 11.316412690848818,
+          "upper": 11.685708121534336,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.1901163824648014,
+          "lower": 0.1497259206789783,
+          "upper": 0.23050684425062448,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.025,
+          "lower": 5.917539623319646,
+          "upper": 6.1324603766803545,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.658907997565488,
+          "lower": 3.5129796010808807,
+          "upper": 3.8048363940500955,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.002444569430933378,
+          "lower": 0.0006829668115416645,
+          "upper": 0.0042061720503250915,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8329812325537205,
+          "lower": 3.3855002686384057,
+          "upper": 4.280462196469035,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2404312843542436,
+          "lower": 0.2047510244791347,
+          "upper": 0.27611154422935247,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3505755492229676,
+          "lower": 2.2427227428489696,
+          "upper": 2.4584283555969657,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 101": {
+      "conditions": [
+        "structure_101_seed1",
+        "structure_101_seed2",
+        "structure_101_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.648706303076265,
+          "lower": 11.489711268514203,
+          "upper": 11.807701337638328,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.09153160656456599,
+          "lower": 0.07188344787602488,
+          "upper": 0.1111797652531071,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.022916666666667,
+          "lower": 5.922803890725354,
+          "upper": 6.12302944260798,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.700648309652072,
+          "lower": 3.5475123466793153,
+          "upper": 3.853784272624829,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9803087112183375,
+          "lower": 3.554867065997529,
+          "upper": 4.405750356439146,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23534248090412563,
+          "lower": 0.19920078305206654,
+          "upper": 0.2714841787561847,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3209212708326286,
+          "lower": 2.229172101291791,
+          "upper": 2.412670440373466,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 110": {
+      "conditions": [
+        "structure_110_seed1",
+        "structure_110_seed2",
+        "structure_110_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.53733312065003,
+          "lower": 11.342745890646919,
+          "upper": 11.731920350653143,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.19259083622721807,
+          "lower": 0.15181988146757375,
+          "upper": 0.23336179098686238,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.040364583333334,
+          "lower": 5.934220713403046,
+          "upper": 6.146508453263622,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.541875677941575,
+          "lower": 3.3846990059456434,
+          "upper": 3.6990523499375065,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0025635607814147683,
+          "lower": 0.0008055642193719511,
+          "upper": 0.0043215573434575855,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8287921119481325,
+          "lower": 3.3808465644221606,
+          "upper": 4.2767376594741044,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.24141657746750622,
+          "lower": 0.20535401867626543,
+          "upper": 0.277479136258747,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.35027392607613,
+          "lower": 2.2450802447951146,
+          "upper": 2.4554676073571455,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|Structure 111": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.69087757941907,
+          "lower": 11.526747536202432,
+          "upper": 11.855007622635707,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0898582858161986,
+          "lower": 0.0707504852704606,
+          "upper": 0.10896608636193661,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.045052083333334,
+          "lower": 5.945003918409243,
+          "upper": 6.1451002482574255,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.5821476272296953,
+          "lower": 3.4188513638368523,
+          "upper": 3.7454438906225382,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9823707593604922,
+          "lower": 3.5573774237475293,
+          "upper": 4.407364094973455,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23604818304714842,
+          "lower": 0.19964440514253812,
+          "upper": 0.2724519609517587,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3240840497897137,
+          "lower": 2.2340033229206,
+          "upper": 2.4141647766588274,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|risk N10": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.501060406191577,
+          "lower": 11.316412690848818,
+          "upper": 11.685708121534336,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.1901163824648014,
+          "lower": 0.1497259206789783,
+          "upper": 0.23050684425062448,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.025,
+          "lower": 5.917539623319646,
+          "upper": 6.1324603766803545,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.658907997565488,
+          "lower": 3.5129796010808807,
+          "upper": 3.8048363940500955,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.002444569430933378,
+          "lower": 0.0006829668115416645,
+          "upper": 0.0042061720503250915,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8329812325537205,
+          "lower": 3.3855002686384057,
+          "upper": 4.280462196469035,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2404312843542436,
+          "lower": 0.2047510244791347,
+          "upper": 0.27611154422935247,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3505755492229676,
+          "lower": 2.2427227428489696,
+          "upper": 2.4584283555969657,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|risk N15": {
+      "conditions": [
+        "fixed_risk_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.443121942624476,
+          "lower": 11.264112435519412,
+          "upper": 11.62213144972954,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.14985418914104792,
+          "lower": 0.11957796304421889,
+          "upper": 0.18013041523787696,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.071875,
+          "lower": 5.960065734981579,
+          "upper": 6.183684265018422,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.643008046935945,
+          "lower": 3.467829584052159,
+          "upper": 3.8181865098197307,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.878574127331376,
+          "lower": 3.4390087491275247,
+          "upper": 4.318139505535227,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.32116400657223265,
+          "lower": 0.27320226325687014,
+          "upper": 0.36912574988759517,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.153353761422924,
+          "lower": 2.0609608827457695,
+          "upper": 2.2457466401000783,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|risk N20": {
+      "conditions": [
+        "fixed_risk_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.459298788389901,
+          "lower": 11.27150683701543,
+          "upper": 11.647090739764373,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.10935295262161107,
+          "lower": 0.08678781482981263,
+          "upper": 0.13191809041340952,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.12109375,
+          "lower": 6.003105940220005,
+          "upper": 6.239081559779995,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.594705387433789,
+          "lower": 3.4218488263266043,
+          "upper": 3.7675619485409735,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9433385021984577,
+          "lower": 3.512676067060192,
+          "upper": 4.3740009373367235,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.3436061961969976,
+          "lower": 0.2897415240151172,
+          "upper": 0.397470868378878,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.1097769202689767,
+          "lower": 2.0254659695696655,
+          "upper": 2.194087870968288,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|risk N30": {
+      "conditions": [
+        "fixed_risk_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.657903182749482,
+          "lower": 11.485174627225748,
+          "upper": 11.830631738273217,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0793842036374519,
+          "lower": 0.06124090934045208,
+          "upper": 0.09752749793445172,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.0609375,
+          "lower": 5.957445455655672,
+          "upper": 6.164429544344327,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.5630421882986174,
+          "lower": 3.4330256176636893,
+          "upper": 3.6930587589335455,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 4.019945756532252,
+          "lower": 3.598147337593094,
+          "upper": 4.44174417547141,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.28520934697508715,
+          "lower": 0.24171703221322796,
+          "upper": 0.3287016617369463,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.199606094378481,
+          "lower": 2.10818248299012,
+          "upper": 2.2910297057668423,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|expectation N10": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.485284396899203,
+          "lower": 11.289522738472108,
+          "upper": 11.681046055326298,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.19459048164411946,
+          "lower": 0.1531947666516377,
+          "upper": 0.23598619663660123,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.0375000000000005,
+          "lower": 5.926880625131247,
+          "upper": 6.148119374868754,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.641231814616586,
+          "lower": 3.494952040970266,
+          "upper": 3.7875115882629062,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0037089489772896916,
+          "lower": 0.0015312050491097552,
+          "upper": 0.005886692905469628,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.8266430981457233,
+          "lower": 3.3783422340170004,
+          "upper": 4.274943962274446,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.23966330281172704,
+          "lower": 0.20479226088624478,
+          "upper": 0.2745343447372093,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3819326496407958,
+          "lower": 2.267175254164766,
+          "upper": 2.4966900451168255,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|expectation N15": {
+      "conditions": [
+        "fixed_expectation_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.448771512358594,
+          "lower": 11.27078949764857,
+          "upper": 11.626753527068617,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.14836522809096697,
+          "lower": 0.11765552835915244,
+          "upper": 0.1790749278227815,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.07265625,
+          "lower": 5.962239248866683,
+          "upper": 6.183073251133316,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.6398578480135484,
+          "lower": 3.465628830376937,
+          "upper": 3.8140868656501596,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.883041698485613,
+          "lower": 3.443723656457894,
+          "upper": 4.322359740513331,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.31831649320867517,
+          "lower": 0.2709609960446172,
+          "upper": 0.3656719903727331,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.1603612193942787,
+          "lower": 2.066343539371492,
+          "upper": 2.2543788994170653,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|expectation N20": {
+      "conditions": [
+        "fixed_expectation_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.449049706206054,
+          "lower": 11.260578864634665,
+          "upper": 11.637520547777443,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.11282134211468064,
+          "lower": 0.08951787053365133,
+          "upper": 0.13612481369570997,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.11328125,
+          "lower": 5.99550352485191,
+          "upper": 6.23105897514809,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.6158257494392725,
+          "lower": 3.4405085959322226,
+          "upper": 3.7911429029463224,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9369886219501495,
+          "lower": 3.5054534141323863,
+          "upper": 4.368523829767913,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.3426028119087517,
+          "lower": 0.2888930233128214,
+          "upper": 0.396312600504682,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.112253721203424,
+          "lower": 2.027671161416018,
+          "upper": 2.19683628099083,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_nominal|expectation N30": {
+      "conditions": [
+        "fixed_expectation_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.652470788652103,
+          "lower": 11.48065401863498,
+          "upper": 11.824287558669226,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07727239039480677,
+          "lower": 0.05905831061407574,
+          "upper": 0.0954864701755378,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.06015625,
+          "lower": 5.956778189172775,
+          "upper": 6.163534310827226,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.581383910239543,
+          "lower": 3.450550620465807,
+          "upper": 3.712217200013279,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 4.028328866697848,
+          "lower": 3.6076199826239033,
+          "upper": 4.449037750771793,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 0.2838763313690438,
+          "lower": 0.24043884275816446,
+          "upper": 0.3273138199799231,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.2033099824654636,
+          "lower": 2.1118653362632296,
+          "upper": 2.2947546286676976,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Joint": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.28900625992275,
+          "lower": 9.039695584553739,
+          "upper": 9.538316935291762,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.2951394070384291,
+          "lower": 0.25749266063228177,
+          "upper": 0.33278615344457646,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.133333333333334,
+          "lower": 5.944634503459207,
+          "upper": 6.32203216320746,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2513674283670566,
+          "lower": 3.0845825099728548,
+          "upper": 3.4181523467612585,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03713082819211085,
+          "lower": 0.029487554121760694,
+          "upper": 0.044774102262461014,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9737329731384912,
+          "lower": 1.8762258507762701,
+          "upper": 2.071240095500712,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.0999884765169934,
+          "lower": 0.9983334724566421,
+          "upper": 1.2016434805773448,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7407028206083703,
+          "lower": 2.64306927524331,
+          "upper": 2.8383363659734306,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Weights-only": {
+      "conditions": [
+        "action_weights_only_seed1",
+        "action_weights_only_seed2",
+        "action_weights_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.214153150101406,
+          "lower": 8.976606439160275,
+          "upper": 9.451699861042538,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3124932468488926,
+          "lower": 0.27543368831209325,
+          "upper": 0.349552805385692,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.153125000000001,
+          "lower": 5.961862958640339,
+          "upper": 6.3443870413596635,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2900341000422726,
+          "lower": 3.1180457037822467,
+          "upper": 3.4620224963022985,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03660022113993611,
+          "lower": 0.029156965651459428,
+          "upper": 0.044043476628412785,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9468659485379856,
+          "lower": 1.8484610993674073,
+          "upper": 2.0452707977085636,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.0992405544056636,
+          "lower": 0.9975103809352581,
+          "upper": 1.200970727876069,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.747642651464441,
+          "lower": 2.6355902527308688,
+          "upper": 2.859695050198013,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Margin-only": {
+      "conditions": [
+        "action_cbf_only_seed1",
+        "action_cbf_only_seed2",
+        "action_cbf_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.2761565005187,
+          "lower": 9.025213309635737,
+          "upper": 9.527099691401665,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.2987578415189394,
+          "lower": 0.2614868193213616,
+          "upper": 0.33602886371651725,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.133333333333333,
+          "lower": 5.942433279908885,
+          "upper": 6.324233386757781,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.25843989364322,
+          "lower": 3.0937842250512317,
+          "upper": 3.423095562235208,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03712469783258303,
+          "lower": 0.0294860221055365,
+          "upper": 0.04476337355962955,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.967095684570571,
+          "lower": 1.8696077287261303,
+          "upper": 2.0645836404150115,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.104306237365233,
+          "lower": 1.0022121205737018,
+          "upper": 1.2064003541567643,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7254342229373494,
+          "lower": 2.6253591199422637,
+          "upper": 2.825509325932435,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Fixed risk": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.229243526220277,
+          "lower": 8.98907764480133,
+          "upper": 9.469409407639223,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3146665432741429,
+          "lower": 0.2772134907719972,
+          "upper": 0.3521195957762886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.1390625,
+          "lower": 5.9462830413799805,
+          "upper": 6.331841958620019,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2757969023316886,
+          "lower": 3.103773639421695,
+          "upper": 3.4478201652416822,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.036905348718208844,
+          "lower": 0.029352132858896814,
+          "upper": 0.04445856457752087,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9443788891658187,
+          "lower": 1.845617827057328,
+          "upper": 2.043139951274309,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044065138030632,
+          "lower": 1.0022919673532722,
+          "upper": 1.2065210602528542,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7218683546764018,
+          "lower": 2.614162955981929,
+          "upper": 2.8295737533708745,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 000": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.228667259372603,
+          "lower": 8.988243237765495,
+          "upper": 9.469091280979711,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3147230374343053,
+          "lower": 0.27726284182456157,
+          "upper": 0.352183233044049,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.139843750000001,
+          "lower": 5.947037985241579,
+          "upper": 6.3326495147584225,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2739624860522563,
+          "lower": 3.1023750756018615,
+          "upper": 3.445549896502651,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03690341109420091,
+          "lower": 0.029350027909392097,
+          "upper": 0.04445679427900972,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9443768104538321,
+          "lower": 1.8455777402834697,
+          "upper": 2.0431758806241946,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044815843753408,
+          "lower": 1.0023775859296993,
+          "upper": 1.2065855828209824,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7216185771118626,
+          "lower": 2.6139419230147136,
+          "upper": 2.8292952312090116,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 001": {
+      "conditions": [
+        "structure_001_seed1",
+        "structure_001_seed2",
+        "structure_001_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.27151751008816,
+          "lower": 9.021164452858265,
+          "upper": 9.521870567318054,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.2944610722067106,
+          "lower": 0.25689637481428346,
+          "upper": 0.3320257695991377,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.140625,
+          "lower": 5.95168104143016,
+          "upper": 6.32956895856984,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2602544782535654,
+          "lower": 3.093157128137538,
+          "upper": 3.4273518283695927,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03707489010826323,
+          "lower": 0.029441556780253664,
+          "upper": 0.0447082234362728,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9747622773672142,
+          "lower": 1.8773125064107785,
+          "upper": 2.07221204832365,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044571789120665,
+          "lower": 1.0023563051033813,
+          "upper": 1.2065580527207518,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.72958752791814,
+          "lower": 2.630222108639783,
+          "upper": 2.828952947196497,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 010": {
+      "conditions": [
+        "structure_010_seed1",
+        "structure_010_seed2",
+        "structure_010_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.246111061666099,
+          "lower": 9.006461342999373,
+          "upper": 9.485760780332825,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3151190886223958,
+          "lower": 0.277600338507913,
+          "upper": 0.3526378387368786,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.133072916666667,
+          "lower": 5.940341518994567,
+          "upper": 6.325804314338767,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2634647408534097,
+          "lower": 3.0911023934395003,
+          "upper": 3.435827088267319,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03699851575154115,
+          "lower": 0.02940701902332231,
+          "upper": 0.044590012479759994,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9438437397281327,
+          "lower": 1.8450328396740459,
+          "upper": 2.0426546397822194,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.100589433990709,
+          "lower": 0.998917000157744,
+          "upper": 1.2022618678236738,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7310130335619704,
+          "lower": 2.625486668428751,
+          "upper": 2.83653939869519,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 011": {
+      "conditions": [
+        "structure_011_seed1",
+        "structure_011_seed2",
+        "structure_011_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.289000014248948,
+          "lower": 9.039028615106256,
+          "upper": 9.538971413391641,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.2949719237793337,
+          "lower": 0.25730254842739775,
+          "upper": 0.3326412991312696,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.134635416666667,
+          "lower": 5.945839592461822,
+          "upper": 6.323431240871511,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.247789640135168,
+          "lower": 3.0816317389737713,
+          "upper": 3.4139475412965647,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03712624613228727,
+          "lower": 0.02948279044208128,
+          "upper": 0.04476970182249326,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.974109686911106,
+          "lower": 1.8766040930890848,
+          "upper": 2.0716152807331274,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1003569573174912,
+          "lower": 0.9986844020432085,
+          "upper": 1.202029512591774,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.740423945862004,
+          "lower": 2.642881095916201,
+          "upper": 2.8379667958078074,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 100": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.229243526220277,
+          "lower": 8.98907764480133,
+          "upper": 9.469409407639223,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3146665432741429,
+          "lower": 0.2772134907719972,
+          "upper": 0.3521195957762886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.1390625,
+          "lower": 5.9462830413799805,
+          "upper": 6.331841958620019,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2757969023316886,
+          "lower": 3.103773639421695,
+          "upper": 3.4478201652416822,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.036905348718208844,
+          "lower": 0.029352132858896814,
+          "upper": 0.04445856457752087,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9443788891658187,
+          "lower": 1.845617827057328,
+          "upper": 2.043139951274309,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044065138030632,
+          "lower": 1.0022919673532722,
+          "upper": 1.2065210602528542,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7218683546764018,
+          "lower": 2.614162955981929,
+          "upper": 2.8295737533708745,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 101": {
+      "conditions": [
+        "structure_101_seed1",
+        "structure_101_seed2",
+        "structure_101_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.270632324901664,
+          "lower": 9.020665161077218,
+          "upper": 9.52059948872611,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.29453159867383266,
+          "lower": 0.25697642874811044,
+          "upper": 0.3320867685995549,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.140364583333334,
+          "lower": 5.951430944625717,
+          "upper": 6.32929822204095,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2627831332549357,
+          "lower": 3.0952718177338223,
+          "upper": 3.430294448776049,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03707553598293254,
+          "lower": 0.029442258506849648,
+          "upper": 0.04470881345901544,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9745543552562594,
+          "lower": 1.8771232059588512,
+          "upper": 2.071985504553668,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.104461024888375,
+          "lower": 1.0023485266247496,
+          "upper": 1.2065735231520005,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7293706544575618,
+          "lower": 2.6299359854437077,
+          "upper": 2.828805323471416,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 110": {
+      "conditions": [
+        "structure_110_seed1",
+        "structure_110_seed2",
+        "structure_110_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.24487469907767,
+          "lower": 9.006123250746892,
+          "upper": 9.483626147408447,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.31521667274015874,
+          "lower": 0.2776877201554864,
+          "upper": 0.3527456253248311,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.1328125,
+          "lower": 5.940087367785355,
+          "upper": 6.325537632214645,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2683892774304035,
+          "lower": 3.095150188230299,
+          "upper": 3.441628366630508,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0369997704107803,
+          "lower": 0.02940838447968895,
+          "upper": 0.04459115634187165,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9437247266372046,
+          "lower": 1.8448967440986839,
+          "upper": 2.0425527091757254,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.100037457067454,
+          "lower": 0.9984215112262707,
+          "upper": 1.2016534029086374,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.731631059420179,
+          "lower": 2.6260820586532527,
+          "upper": 2.8371800601871056,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|Structure 111": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.28900625992275,
+          "lower": 9.039695584553739,
+          "upper": 9.538316935291762,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.2951394070384291,
+          "lower": 0.25749266063228177,
+          "upper": 0.33278615344457646,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.133333333333334,
+          "lower": 5.944634503459207,
+          "upper": 6.32203216320746,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2513674283670566,
+          "lower": 3.0845825099728548,
+          "upper": 3.4181523467612585,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03713082819211085,
+          "lower": 0.029487554121760694,
+          "upper": 0.044774102262461014,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9737329731384912,
+          "lower": 1.8762258507762701,
+          "upper": 2.071240095500712,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.0999884765169934,
+          "lower": 0.9983334724566421,
+          "upper": 1.2016434805773448,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7407028206083703,
+          "lower": 2.64306927524331,
+          "upper": 2.8383363659734306,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|risk N10": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.229243526220277,
+          "lower": 8.98907764480133,
+          "upper": 9.469409407639223,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3146665432741429,
+          "lower": 0.2772134907719972,
+          "upper": 0.3521195957762886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.1390625,
+          "lower": 5.9462830413799805,
+          "upper": 6.331841958620019,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2757969023316886,
+          "lower": 3.103773639421695,
+          "upper": 3.4478201652416822,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.036905348718208844,
+          "lower": 0.029352132858896814,
+          "upper": 0.04445856457752087,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9443788891658187,
+          "lower": 1.845617827057328,
+          "upper": 2.043139951274309,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044065138030632,
+          "lower": 1.0022919673532722,
+          "upper": 1.2065210602528542,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7218683546764018,
+          "lower": 2.614162955981929,
+          "upper": 2.8295737533708745,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|risk N15": {
+      "conditions": [
+        "fixed_risk_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.008884633047941,
+          "lower": 8.71440981711834,
+          "upper": 9.303359448977542,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3077127914725679,
+          "lower": 0.27008708738359216,
+          "upper": 0.34533849556154367,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.3500000000000005,
+          "lower": 6.132173652017961,
+          "upper": 6.56782634798204,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.076954246798839,
+          "lower": 2.945522229246351,
+          "upper": 3.2083862643513266,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.040850358851788976,
+          "lower": 0.03333868900880882,
+          "upper": 0.04836202869476913,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.95736884791404,
+          "lower": 1.8582573004536822,
+          "upper": 2.056480395374398,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.2033922625016678,
+          "lower": 1.08894287821528,
+          "upper": 1.3178416467880556,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.5108378374835842,
+          "lower": 2.402528549201648,
+          "upper": 2.6191471257655206,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|risk N20": {
+      "conditions": [
+        "fixed_risk_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.556432816501452,
+          "lower": 8.200178632450402,
+          "upper": 8.912687000552502,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.30228468437189804,
+          "lower": 0.26455683984486666,
+          "upper": 0.3400125288989294,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.6078125,
+          "lower": 6.359909392887036,
+          "upper": 6.8557156071129635,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.0795919087298116,
+          "lower": 2.9585917630419685,
+          "upper": 3.2005920544176547,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03999664096651292,
+          "lower": 0.03247521623738439,
+          "upper": 0.047518065695641445,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9654941372573376,
+          "lower": 1.8667076681480137,
+          "upper": 2.0642806063666614,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.3125403176491914,
+          "lower": 1.1858897493213463,
+          "upper": 1.4391908859770366,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.3539903061533622,
+          "lower": 2.238291437081137,
+          "upper": 2.4696891752255876,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|risk N30": {
+      "conditions": [
+        "fixed_risk_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.98860511059885,
+          "lower": 8.682117297990656,
+          "upper": 9.295092923207045,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.29883562359191274,
+          "lower": 0.2607807995997,
+          "upper": 0.33689044758412545,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.33359375,
+          "lower": 6.121229260678186,
+          "upper": 6.5459582393218145,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.1593196319538577,
+          "lower": 3.05111532915503,
+          "upper": 3.267523934752685,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.040831957667953896,
+          "lower": 0.03329700950600289,
+          "upper": 0.0483669058299049,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.972040168941021,
+          "lower": 1.8732435157403629,
+          "upper": 2.070836822141679,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1998809582377272,
+          "lower": 1.0850118759706406,
+          "upper": 1.3147500405048138,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.5505309198405053,
+          "lower": 2.449589667177699,
+          "upper": 2.6514721725033117,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|expectation N10": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.228667259372603,
+          "lower": 8.988243237765495,
+          "upper": 9.469091280979711,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3147230374343053,
+          "lower": 0.27726284182456157,
+          "upper": 0.352183233044049,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.139843750000001,
+          "lower": 5.947037985241579,
+          "upper": 6.3326495147584225,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.2739624860522563,
+          "lower": 3.1023750756018615,
+          "upper": 3.445549896502651,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03690341109420091,
+          "lower": 0.029350027909392097,
+          "upper": 0.04445679427900972,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9443768104538321,
+          "lower": 1.8455777402834697,
+          "upper": 2.0431758806241946,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1044815843753408,
+          "lower": 1.0023775859296993,
+          "upper": 1.2065855828209824,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.7216185771118626,
+          "lower": 2.6139419230147136,
+          "upper": 2.8292952312090116,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|expectation N15": {
+      "conditions": [
+        "fixed_expectation_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.009046876144467,
+          "lower": 8.7148234888069,
+          "upper": 9.303270263482034,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.3077127892806857,
+          "lower": 0.27008708464114883,
+          "upper": 0.34533849392022253,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.3500000000000005,
+          "lower": 6.132151536545242,
+          "upper": 6.567848463454759,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.077314215795492,
+          "lower": 2.9458497005255824,
+          "upper": 3.2087787310654017,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.040850358851788976,
+          "lower": 0.03333868900880882,
+          "upper": 0.04836202869476913,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.957369309850037,
+          "lower": 1.858257564202788,
+          "upper": 2.056481055497286,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.2031067997738334,
+          "lower": 1.0887502237667892,
+          "upper": 1.3174633757808776,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.511259844907525,
+          "lower": 2.403064017238956,
+          "upper": 2.6194556725760942,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|expectation N20": {
+      "conditions": [
+        "fixed_expectation_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.55622782175588,
+          "lower": 8.199936949698898,
+          "upper": 8.91251869381286,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.30228468437189804,
+          "lower": 0.26455683984486666,
+          "upper": 0.3400125288989294,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.6078125,
+          "lower": 6.359909392887036,
+          "upper": 6.8557156071129635,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.0798329989258564,
+          "lower": 2.9588631759394386,
+          "upper": 3.200802821912274,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.03999664096651292,
+          "lower": 0.03247521623738439,
+          "upper": 0.047518065695641445,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.9654941372573376,
+          "lower": 1.8667076681480137,
+          "upper": 2.0642806063666614,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.3125838492731465,
+          "lower": 1.1859259248588998,
+          "upper": 1.4392417736873933,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.353951340583056,
+          "lower": 2.2382500031686843,
+          "upper": 2.4696526779974275,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "merge_stress|expectation N30": {
+      "conditions": [
+        "fixed_expectation_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.988605852294413,
+          "lower": 8.682118033442851,
+          "upper": 9.295093671145974,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.29883562359191274,
+          "lower": 0.2607807995997,
+          "upper": 0.33689044758412545,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.33359375,
+          "lower": 6.121229260678186,
+          "upper": 6.5459582393218145,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 3.1593190925106946,
+          "lower": 3.0511147092637283,
+          "upper": 3.267523475757661,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.040831957667953896,
+          "lower": 0.03329700950600289,
+          "upper": 0.0483669058299049,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 1.972040168941021,
+          "lower": 1.8732435157403629,
+          "upper": 2.070836822141679,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.1998807443854953,
+          "lower": 1.0850116631266296,
+          "upper": 1.314749825644361,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 2.5505307964795856,
+          "lower": 2.4495895499476896,
+          "upper": 2.6514720430114815,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Joint": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.288547535181465,
+          "lower": 8.869957823868033,
+          "upper": 9.707137246494897,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08091674192255027,
+          "lower": 0.06852427990457936,
+          "upper": 0.09330920394052118,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2588541666666675,
+          "lower": 6.148100628911623,
+          "upper": 6.369607704421712,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.122097875895803,
+          "lower": 5.810005756985284,
+          "upper": 6.434189994806323,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005140361552728422,
+          "lower": 0.0036553349422863766,
+          "upper": 0.006625388163170466,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1102884995440645,
+          "lower": 2.862988622452012,
+          "upper": 3.357588376636117,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.694544978189515e-16,
+          "lower": 2.4609351718702163e-16,
+          "upper": 2.9281547845088137e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.904387628176483,
+          "lower": 4.816805453528074,
+          "upper": 4.991969802824892,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Weights-only": {
+      "conditions": [
+        "action_weights_only_seed1",
+        "action_weights_only_seed2",
+        "action_weights_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.240924011251867,
+          "lower": 8.82005469748639,
+          "upper": 9.661793325017344,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08358095473653693,
+          "lower": 0.07045389615189444,
+          "upper": 0.09670801332117941,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.261197916666667,
+          "lower": 6.149177387936424,
+          "upper": 6.37321844539691,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.157169206605779,
+          "lower": 5.840824056360669,
+          "upper": 6.47351435685089,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005269890351415815,
+          "lower": 0.0037848919888059857,
+          "upper": 0.006754888714025645,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1049612027903395,
+          "lower": 2.856942567013495,
+          "upper": 3.352979838567184,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.730290374193769e-16,
+          "lower": 2.4957347791030046e-16,
+          "upper": 2.964845969284533e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.905923590347294,
+          "lower": 4.818536193646469,
+          "upper": 4.99331098704812,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Margin-only": {
+      "conditions": [
+        "action_cbf_only_seed1",
+        "action_cbf_only_seed2",
+        "action_cbf_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.060155851119527,
+          "lower": 8.60733391645978,
+          "upper": 9.512977785779274,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08526709009760314,
+          "lower": 0.07195437536609203,
+          "upper": 0.09857980482911424,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2627604166666675,
+          "lower": 6.1517482779203885,
+          "upper": 6.3737725554129465,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.307601995960322,
+          "lower": 5.956991089174034,
+          "upper": 6.658212902746611,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005686465884567927,
+          "lower": 0.004132687072507649,
+          "upper": 0.007240244696628205,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.099884467820327,
+          "lower": 2.8513779020360315,
+          "upper": 3.348391033604622,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7531674138552167e-16,
+          "lower": 2.513867554288682e-16,
+          "upper": 2.9924672734217514e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.905503883761545,
+          "lower": 4.81826265095098,
+          "upper": 4.99274511657211,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Fixed risk": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.053412514091097,
+          "lower": 8.600838702786536,
+          "upper": 9.505986325395657,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08717102170788937,
+          "lower": 0.07333307896357341,
+          "upper": 0.10100896445220534,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2679687500000005,
+          "lower": 6.156202664934396,
+          "upper": 6.379734835065605,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.304264617219758,
+          "lower": 5.953253678264738,
+          "upper": 6.655275556174778,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0056854324850970275,
+          "lower": 0.004131823250622127,
+          "upper": 0.007239041719571928,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.09625506401062,
+          "lower": 2.847227488977019,
+          "upper": 3.345282639044221,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7620632936532805e-16,
+          "lower": 2.5240073560387557e-16,
+          "upper": 3.0001192312678052e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.907027217234502,
+          "lower": 4.819489925271143,
+          "upper": 4.99456450919786,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 000": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.061988969564172,
+          "lower": 8.60596131366094,
+          "upper": 9.518016625467405,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08789672436885398,
+          "lower": 0.07400268527123875,
+          "upper": 0.10179076346646922,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.28125,
+          "lower": 6.166195674743028,
+          "upper": 6.396304325256972,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.275320791437328,
+          "lower": 5.928428790006658,
+          "upper": 6.622212792867998,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005538660157177789,
+          "lower": 0.003994865587939904,
+          "upper": 0.007082454726415674,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.094025243073702,
+          "lower": 2.844727042880816,
+          "upper": 3.3433234432665877,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.726777480573417e-16,
+          "lower": 2.493024306949949e-16,
+          "upper": 2.960530654196885e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.914561450112334,
+          "lower": 4.827100613437468,
+          "upper": 5.0020222867872,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 001": {
+      "conditions": [
+        "structure_001_seed1",
+        "structure_001_seed2",
+        "structure_001_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.072707112069736,
+          "lower": 8.616287491320435,
+          "upper": 9.529126732819037,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08355257561346999,
+          "lower": 0.0707961844973595,
+          "upper": 0.09630896672958048,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.272135416666668,
+          "lower": 6.158464144303225,
+          "upper": 6.385806689030111,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.2840288630198184,
+          "lower": 5.9381743892354955,
+          "upper": 6.629883336804141,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005542748943450274,
+          "lower": 0.003998182037417254,
+          "upper": 0.007087315849483294,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.102319629242023,
+          "lower": 2.854194694955055,
+          "upper": 3.350444563528991,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.712897096091463e-16,
+          "lower": 2.4794841871252896e-16,
+          "upper": 2.9463100050576366e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.912375045536017,
+          "lower": 4.825203786541268,
+          "upper": 4.9995463045307655,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 010": {
+      "conditions": [
+        "structure_010_seed1",
+        "structure_010_seed2",
+        "structure_010_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.238181196664366,
+          "lower": 8.812165978159635,
+          "upper": 9.664196415169096,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0858579490950843,
+          "lower": 0.07238635681686302,
+          "upper": 0.09932954137330559,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.277604166666666,
+          "lower": 6.162730593582561,
+          "upper": 6.392477739750772,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.134611868121004,
+          "lower": 5.817429283320308,
+          "upper": 6.4517944529217,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005214084263407872,
+          "lower": 0.003721557542955843,
+          "upper": 0.006706610983859901,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.099307368199031,
+          "lower": 2.850584903057914,
+          "upper": 3.348029833340148,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.6944136071455617e-16,
+          "lower": 2.4665175055359296e-16,
+          "upper": 2.922309708755194e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.913777339288075,
+          "lower": 4.826225326043389,
+          "upper": 5.0013293525327605,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 011": {
+      "conditions": [
+        "structure_011_seed1",
+        "structure_011_seed2",
+        "structure_011_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.250592368648945,
+          "lower": 8.824304416583335,
+          "upper": 9.676880320714556,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08143502707787631,
+          "lower": 0.06905295528212851,
+          "upper": 0.0938170988736241,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.269791666666666,
+          "lower": 6.155749781855703,
+          "upper": 6.38383355147763,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.1403254586935105,
+          "lower": 5.823985648518799,
+          "upper": 6.456665268868222,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005216151062349671,
+          "lower": 0.0037232427622246986,
+          "upper": 0.006709059362474644,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1080083933969336,
+          "lower": 2.860496218001167,
+          "upper": 3.3555205687927003,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.675331581869838e-16,
+          "lower": 2.446391286578944e-16,
+          "upper": 2.904271877160732e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.911570278963181,
+          "lower": 4.824168856367993,
+          "upper": 4.998971701558369,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 100": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.053412514091097,
+          "lower": 8.600838702786536,
+          "upper": 9.505986325395657,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08717102170788937,
+          "lower": 0.07333307896357341,
+          "upper": 0.10100896445220534,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2679687500000005,
+          "lower": 6.156202664934396,
+          "upper": 6.379734835065605,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.304264617219758,
+          "lower": 5.953253678264738,
+          "upper": 6.655275556174778,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0056854324850970275,
+          "lower": 0.004131823250622127,
+          "upper": 0.007239041719571928,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.09625506401062,
+          "lower": 2.847227488977019,
+          "upper": 3.345282639044221,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7620632936532805e-16,
+          "lower": 2.5240073560387557e-16,
+          "upper": 3.0001192312678052e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.907027217234502,
+          "lower": 4.819489925271143,
+          "upper": 4.99456450919786,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 101": {
+      "conditions": [
+        "structure_101_seed1",
+        "structure_101_seed2",
+        "structure_101_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.063064733099846,
+          "lower": 8.610195781568105,
+          "upper": 9.515933684631587,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08306812333431038,
+          "lower": 0.0703284252515052,
+          "upper": 0.09580782141711555,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.259635416666668,
+          "lower": 6.14932944193822,
+          "upper": 6.369941391395115,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.312570617742491,
+          "lower": 5.962553522800635,
+          "upper": 6.6625877126843465,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005687499284038827,
+          "lower": 0.004133548221909875,
+          "upper": 0.0072414503461677784,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.104045730084181,
+          "lower": 2.856126110977983,
+          "upper": 3.3519653491903787,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.746794489493588e-16,
+          "lower": 2.5096928229601057e-16,
+          "upper": 2.9838961560270706e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.904794172359367,
+          "lower": 4.8175591995572455,
+          "upper": 4.992029145161488,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 110": {
+      "conditions": [
+        "structure_110_seed1",
+        "structure_110_seed2",
+        "structure_110_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.275836032880031,
+          "lower": 8.857385081243192,
+          "upper": 9.69428698451687,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0852846457870271,
+          "lower": 0.07180331496291434,
+          "upper": 0.09876597661113987,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.267447916666667,
+          "lower": 6.155770319848324,
+          "upper": 6.379125513485009,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.115601382985756,
+          "lower": 5.802484989215032,
+          "upper": 6.428717776756479,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0051382947537866215,
+          "lower": 0.003653655001828255,
+          "upper": 0.006622934505744988,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1016874040166535,
+          "lower": 2.853186628062881,
+          "upper": 3.3501881799704263,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7097458713667444e-16,
+          "lower": 2.475185938988769e-16,
+          "upper": 2.9443058037447195e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.906812761825325,
+          "lower": 4.819022510936123,
+          "upper": 4.994603012714527,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|Structure 111": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.288547535181465,
+          "lower": 8.869957823868033,
+          "upper": 9.707137246494897,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08091674192255027,
+          "lower": 0.06852427990457936,
+          "upper": 0.09330920394052118,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2588541666666675,
+          "lower": 6.148100628911623,
+          "upper": 6.369607704421712,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.122097875895803,
+          "lower": 5.810005756985284,
+          "upper": 6.434189994806323,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005140361552728422,
+          "lower": 0.0036553349422863766,
+          "upper": 0.006625388163170466,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1102884995440645,
+          "lower": 2.862988622452012,
+          "upper": 3.357588376636117,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.694544978189515e-16,
+          "lower": 2.4609351718702163e-16,
+          "upper": 2.9281547845088137e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.904387628176483,
+          "lower": 4.816805453528074,
+          "upper": 4.991969802824892,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|risk N10": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.053412514091097,
+          "lower": 8.600838702786536,
+          "upper": 9.505986325395657,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08717102170788937,
+          "lower": 0.07333307896357341,
+          "upper": 0.10100896445220534,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.2679687500000005,
+          "lower": 6.156202664934396,
+          "upper": 6.379734835065605,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.304264617219758,
+          "lower": 5.953253678264738,
+          "upper": 6.655275556174778,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0056854324850970275,
+          "lower": 0.004131823250622127,
+          "upper": 0.007239041719571928,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.09625506401062,
+          "lower": 2.847227488977019,
+          "upper": 3.345282639044221,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7620632936532805e-16,
+          "lower": 2.5240073560387557e-16,
+          "upper": 3.0001192312678052e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.907027217234502,
+          "lower": 4.819489925271143,
+          "upper": 4.99456450919786,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|risk N15": {
+      "conditions": [
+        "fixed_risk_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.521834557904882,
+          "lower": 7.8323428815562135,
+          "upper": 9.21132623425355,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0322158312216394,
+          "lower": 0.024856379125290366,
+          "upper": 0.03957528331798844,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.46640625,
+          "lower": 6.275534945356798,
+          "upper": 6.657277554643203,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.426690018266623,
+          "lower": 6.012937538327364,
+          "upper": 6.840442498205881,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0060887746364071795,
+          "lower": 0.004625161748970737,
+          "upper": 0.007552387523843622,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.359059374779463,
+          "lower": 3.1372379852377987,
+          "upper": 3.580880764321127,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.612584479138907e-16,
+          "lower": 2.382638255468338e-16,
+          "upper": 2.8425307028094756e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.002302190770914,
+          "lower": 4.895487405804876,
+          "upper": 5.109116975736952,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|risk N20": {
+      "conditions": [
+        "fixed_risk_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.351128066084078,
+          "lower": 8.686739910600332,
+          "upper": 10.015516221567824,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.015849495999295637,
+          "lower": 0.008852397779697234,
+          "upper": 0.02284659421889404,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 7.1015625,
+          "lower": 6.71019929688872,
+          "upper": 7.49292570311128,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.100564084982855,
+          "lower": 4.942951997188461,
+          "upper": 5.258176172777249,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0019782230937093028,
+          "lower": 0.0010729224529934204,
+          "upper": 0.0028835237344251854,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.689313806593418,
+          "lower": 3.4949061815552045,
+          "upper": 3.8837214316316317,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.5547315214188926e-16,
+          "lower": 2.325204609724584e-16,
+          "upper": 2.784258433113201e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.224289152116115,
+          "lower": 5.101174263395824,
+          "upper": 5.347404040836406,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|risk N30": {
+      "conditions": [
+        "fixed_risk_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 4.007677295621646,
+          "lower": 2.15045566178868,
+          "upper": 5.864898929454613,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.010930026326453984,
+          "lower": 0.004401830074238936,
+          "upper": 0.017458222578669032,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 9.947656250000001,
+          "lower": 9.000037250299439,
+          "upper": 10.895275249700564,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.8514656615295735,
+          "lower": 4.683808427168692,
+          "upper": 5.019122895890455,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0015695009436769258,
+          "lower": 0.000788402956385912,
+          "upper": 0.0023505989309679396,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 4.228749226778746,
+          "lower": 4.040395160132095,
+          "upper": 4.417103293425396,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.726124098683204e-16,
+          "lower": 2.4669656279137073e-16,
+          "upper": 2.9852825694527006e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.760200398715702,
+          "lower": 5.585930541157523,
+          "upper": 5.934470256273882,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|expectation N10": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.061988969564172,
+          "lower": 8.60596131366094,
+          "upper": 9.518016625467405,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.08789672436885398,
+          "lower": 0.07400268527123875,
+          "upper": 0.10179076346646922,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.28125,
+          "lower": 6.166195674743028,
+          "upper": 6.396304325256972,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.275320791437328,
+          "lower": 5.928428790006658,
+          "upper": 6.622212792867998,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.005538660157177789,
+          "lower": 0.003994865587939904,
+          "upper": 0.007082454726415674,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.094025243073702,
+          "lower": 2.844727042880816,
+          "upper": 3.3433234432665877,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.726777480573417e-16,
+          "lower": 2.493024306949949e-16,
+          "upper": 2.960530654196885e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.914561450112334,
+          "lower": 4.827100613437468,
+          "upper": 5.0020222867872,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|expectation N15": {
+      "conditions": [
+        "fixed_expectation_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 8.543172048728223,
+          "lower": 7.8590516945226785,
+          "upper": 9.227292402933768,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.03183294740180065,
+          "lower": 0.024511871308820862,
+          "upper": 0.039154023494780435,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 6.44921875,
+          "lower": 6.261250421842675,
+          "upper": 6.637187078157325,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 6.433597331397539,
+          "lower": 6.017780336020464,
+          "upper": 6.849414326774615,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.006122497347118835,
+          "lower": 0.0046533552119224246,
+          "upper": 0.007591639482315245,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.361278973519802,
+          "lower": 3.1397517216680315,
+          "upper": 3.5828062253715727,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.620909243796653e-16,
+          "lower": 2.391699307831234e-16,
+          "upper": 2.850119179762072e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.9968136060721156,
+          "lower": 4.891216315702506,
+          "upper": 5.102410896441725,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|expectation N20": {
+      "conditions": [
+        "fixed_expectation_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 9.30506378349876,
+          "lower": 8.632332209536914,
+          "upper": 9.977795357460606,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.015761191208743863,
+          "lower": 0.008785567460049229,
+          "upper": 0.022736814957438498,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 7.1390625000000005,
+          "lower": 6.739342501667751,
+          "upper": 7.5387824983322504,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.101491790567343,
+          "lower": 4.943107599176377,
+          "upper": 5.259875981958309,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.001958247951663848,
+          "lower": 0.0010631654986714549,
+          "upper": 0.0028533304046562415,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.6896720342338085,
+          "lower": 3.495344532202436,
+          "upper": 3.883999536265181,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.549834884488437e-16,
+          "lower": 2.3199563690012978e-16,
+          "upper": 2.779713399975576e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.233458787466274,
+          "lower": 5.108753128498681,
+          "upper": 5.358164446433867,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_nominal|expectation N30": {
+      "conditions": [
+        "fixed_expectation_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 4.006762739010481,
+          "lower": 2.1493307081729442,
+          "upper": 5.864194769848019,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.010930023357863278,
+          "lower": 0.004401829220836599,
+          "upper": 0.017458217494889957,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 9.947656250000001,
+          "lower": 9.000037250299439,
+          "upper": 10.895275249700564,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.851883264998397,
+          "lower": 4.684232772040675,
+          "upper": 5.01953375795612,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.0015695009436769258,
+          "lower": 0.000788402956385912,
+          "upper": 0.0023505989309679396,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 4.228749234229326,
+          "lower": 4.040395170149201,
+          "upper": 4.417103298309452,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.7325475949958375e-16,
+          "lower": 2.474395437236689e-16,
+          "upper": 2.990699752754986e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.759753951800073,
+          "lower": 5.58563475478613,
+          "upper": 5.933873148814016,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Joint": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.930954111776447,
+          "lower": 10.489692101540864,
+          "upper": 11.37221612201203,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.06818292484570954,
+          "lower": 0.058295236073837096,
+          "upper": 0.07807061361758198,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.373958333333334,
+          "lower": 5.298664347251032,
+          "upper": 5.449252319415637,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.640585689367284,
+          "lower": 5.258604825613843,
+          "upper": 6.022566553120725,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01621266596652199,
+          "lower": 0.014292637899816496,
+          "upper": 0.01813269403322748,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.113861031830311,
+          "lower": 2.872394859153433,
+          "upper": 3.3553272045071885,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.9995104435231254e-16,
+          "lower": 1.893345513008152e-16,
+          "upper": 2.105675374038099e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.747739391797962,
+          "lower": 4.694515472490629,
+          "upper": 4.800963311105296,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Weights-only": {
+      "conditions": [
+        "action_weights_only_seed1",
+        "action_weights_only_seed2",
+        "action_weights_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.920036912648744,
+          "lower": 10.475545031677418,
+          "upper": 11.36452879362007,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.06985179323379336,
+          "lower": 0.05958657754836888,
+          "upper": 0.08011700891921783,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.373697916666668,
+          "lower": 5.298255794964924,
+          "upper": 5.449140038368411,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.646548036179908,
+          "lower": 5.26028013306591,
+          "upper": 6.032815939293906,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01625667302592602,
+          "lower": 0.014351261042106486,
+          "upper": 0.018162085009745556,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.109169679383437,
+          "lower": 2.867122607246438,
+          "upper": 3.351216751520436,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0136786463020357e-16,
+          "lower": 1.916407508916316e-16,
+          "upper": 2.1109497836877556e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.746775893467704,
+          "lower": 4.693558539364312,
+          "upper": 4.799993247571096,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Margin-only": {
+      "conditions": [
+        "action_cbf_only_seed1",
+        "action_cbf_only_seed2",
+        "action_cbf_only_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.762056749293615,
+          "lower": 10.279743708545535,
+          "upper": 11.244369790041695,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07108456348159983,
+          "lower": 0.06038660368728953,
+          "upper": 0.08178252327591014,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.375520833333334,
+          "lower": 5.300008387057246,
+          "upper": 5.451033279609422,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.780389284941922,
+          "lower": 5.361349086718686,
+          "upper": 6.199429483165158,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016526984201375015,
+          "lower": 0.014599070520796247,
+          "upper": 0.018454897881953782,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1068749092519283,
+          "lower": 2.864537058325048,
+          "upper": 3.349212760178809,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.022880213720958e-16,
+          "lower": 1.9162111781830862e-16,
+          "upper": 2.1295492492588296e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.749703854547876,
+          "lower": 4.696707594913236,
+          "upper": 4.8027001141825165,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Fixed risk": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.761616829297957,
+          "lower": 10.279327889611457,
+          "upper": 11.243905768984456,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07175995486801812,
+          "lower": 0.06079462950250787,
+          "upper": 0.08272528023352836,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.375,
+          "lower": 5.299443206884507,
+          "upper": 5.450556793115493,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.78030134862308,
+          "lower": 5.361244452060905,
+          "upper": 6.199358245185255,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016526984201375015,
+          "lower": 0.014599070520796247,
+          "upper": 0.018454897881953782,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.10553440079093,
+          "lower": 2.8629980165470195,
+          "upper": 3.34807078503484,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0276535680585865e-16,
+          "lower": 1.9200680160012792e-16,
+          "upper": 2.1352391201158937e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.749350733278349,
+          "lower": 4.696336919816675,
+          "upper": 4.802364546740023,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 000": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.725414430381221,
+          "lower": 10.237862535144734,
+          "upper": 11.212966325617709,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07175995508788224,
+          "lower": 0.06079462976673483,
+          "upper": 0.08272528040902966,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.3734375000000005,
+          "lower": 5.298024804690532,
+          "upper": 5.448850195309469,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.816502837354857,
+          "lower": 5.391474234422496,
+          "upper": 6.241531440287218,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016674013706957154,
+          "lower": 0.014721907243350143,
+          "upper": 0.018626120170564163,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.105459112673998,
+          "lower": 2.862942641500107,
+          "upper": 3.3479755838478886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0293000214371134e-16,
+          "lower": 1.9212044526864882e-16,
+          "upper": 2.1373955901877386e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.7475606188609785,
+          "lower": 4.694724848649066,
+          "upper": 4.800396389072891,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 001": {
+      "conditions": [
+        "structure_001_seed1",
+        "structure_001_seed2",
+        "structure_001_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.727748148604626,
+          "lower": 10.24003109110816,
+          "upper": 11.215465206101092,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07015736891342086,
+          "lower": 0.059884875192685844,
+          "upper": 0.08042986263415589,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.374218750000001,
+          "lower": 5.2989451086615365,
+          "upper": 5.449492391338465,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.815631822407857,
+          "lower": 5.390513509322997,
+          "upper": 6.240750135492717,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016674013706957154,
+          "lower": 0.014721907243350143,
+          "upper": 0.018626120170564163,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.108489114791155,
+          "lower": 2.866452755469302,
+          "upper": 3.3505254741130077,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0337685354070718e-16,
+          "lower": 1.9244091443788827e-16,
+          "upper": 2.1431279264352608e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.748101677613381,
+          "lower": 4.695324174489453,
+          "upper": 4.800879180737308,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 010": {
+      "conditions": [
+        "structure_010_seed1",
+        "structure_010_seed2",
+        "structure_010_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.898235066293804,
+          "lower": 10.452230415781946,
+          "upper": 11.344239716805662,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.06988097962316223,
+          "lower": 0.059536737711835305,
+          "upper": 0.08022522153448915,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.371354166666667,
+          "lower": 5.296124914007118,
+          "upper": 5.446583419326217,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.6722510916553555,
+          "lower": 5.284202804840285,
+          "upper": 6.060299378470426,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016359734750636054,
+          "lower": 0.014414675095437526,
+          "upper": 0.018304794405834584,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.109765265136957,
+          "lower": 2.867772474108007,
+          "upper": 3.3517580561659073,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0030574819239016e-16,
+          "lower": 1.8983891180774497e-16,
+          "upper": 2.1077258457703536e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.745259597975792,
+          "lower": 4.692265486136498,
+          "upper": 4.798253709815087,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 011": {
+      "conditions": [
+        "structure_011_seed1",
+        "structure_011_seed2",
+        "structure_011_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.896895616457353,
+          "lower": 10.450113841502423,
+          "upper": 11.343677391412283,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.06818292498796344,
+          "lower": 0.0582952362703242,
+          "upper": 0.07807061370560267,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.372395833333334,
+          "lower": 5.297247116764709,
+          "upper": 5.447544549901959,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.675153118013944,
+          "lower": 5.2868102913632615,
+          "upper": 6.063495944664627,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016359695472104127,
+          "lower": 0.014414643788583592,
+          "upper": 0.018304747155624662,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.113785743713379,
+          "lower": 2.872339492325732,
+          "upper": 3.355231995101026,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.9928807469247055e-16,
+          "lower": 1.8889361073533747e-16,
+          "upper": 2.0968253864960362e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.746025317764489,
+          "lower": 4.692960231823182,
+          "upper": 4.7990904037057955,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 100": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.761616829297957,
+          "lower": 10.279327889611457,
+          "upper": 11.243905768984456,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07175995486801812,
+          "lower": 0.06079462950250787,
+          "upper": 0.08272528023352836,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.375,
+          "lower": 5.299443206884507,
+          "upper": 5.450556793115493,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.78030134862308,
+          "lower": 5.361244452060905,
+          "upper": 6.199358245185255,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016526984201375015,
+          "lower": 0.014599070520796247,
+          "upper": 0.018454897881953782,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.10553440079093,
+          "lower": 2.8629980165470195,
+          "upper": 3.34807078503484,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0276535680585865e-16,
+          "lower": 1.9200680160012792e-16,
+          "upper": 2.1352391201158937e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.749350733278349,
+          "lower": 4.696336919816675,
+          "upper": 4.802364546740023,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 101": {
+      "conditions": [
+        "structure_101_seed1",
+        "structure_101_seed2",
+        "structure_101_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.763950547575845,
+          "lower": 10.281500043244144,
+          "upper": 11.246401051907547,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07015736869355674,
+          "lower": 0.05988487492652439,
+          "upper": 0.08042986246058909,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.375781250000001,
+          "lower": 5.3003637442220555,
+          "upper": 5.451198755777947,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.779430333433817,
+          "lower": 5.36028476802305,
+          "upper": 6.1985758988445845,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016526984201375015,
+          "lower": 0.014599070520796247,
+          "upper": 0.018454897881953782,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.1085644029080868,
+          "lower": 2.8665081200769267,
+          "upper": 3.350620685739247,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0284594785863976e-16,
+          "lower": 1.9201708793589229e-16,
+          "upper": 2.1367480778138723e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.749891792024437,
+          "lower": 4.696936613679768,
+          "upper": 4.802846970369106,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 110": {
+      "conditions": [
+        "structure_110_seed1",
+        "structure_110_seed2",
+        "structure_110_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.931984014000221,
+          "lower": 10.491398395618699,
+          "upper": 11.372569632381744,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.0698809796167262,
+          "lower": 0.05953673735893797,
+          "upper": 0.08022522187451442,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.372916666666668,
+          "lower": 5.297541633929319,
+          "upper": 5.448291699404017,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.637900195635806,
+          "lower": 5.256158977206657,
+          "upper": 6.019641414064956,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016212705245053916,
+          "lower": 0.014292669010038169,
+          "upper": 0.018132741480069662,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.109840554495652,
+          "lower": 2.8678278486584228,
+          "upper": 3.3518532603328817,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.996950700316018e-16,
+          "lower": 1.8923244610353757e-16,
+          "upper": 2.10157693959666e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.747039759598571,
+          "lower": 4.693862603964503,
+          "upper": 4.800216915232639,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|Structure 111": {
+      "conditions": [
+        "action_joint_seed1",
+        "action_joint_seed2",
+        "action_joint_seed3"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.930954111776447,
+          "lower": 10.489692101540864,
+          "upper": 11.37221612201203,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.06818292484570954,
+          "lower": 0.058295236073837096,
+          "upper": 0.07807061361758198,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.373958333333334,
+          "lower": 5.298664347251032,
+          "upper": 5.449252319415637,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.640585689367284,
+          "lower": 5.258604825613843,
+          "upper": 6.022566553120725,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01621266596652199,
+          "lower": 0.014292637899816496,
+          "upper": 0.01813269403322748,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.113861031830311,
+          "lower": 2.872394859153433,
+          "upper": 3.3553272045071885,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.9995104435231254e-16,
+          "lower": 1.893345513008152e-16,
+          "upper": 2.105675374038099e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.747739391797962,
+          "lower": 4.694515472490629,
+          "upper": 4.800963311105296,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|risk N10": {
+      "conditions": [
+        "fixed_risk_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.761616829297957,
+          "lower": 10.279327889611457,
+          "upper": 11.243905768984456,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07175995486801812,
+          "lower": 0.06079462950250787,
+          "upper": 0.08272528023352836,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.375,
+          "lower": 5.299443206884507,
+          "upper": 5.450556793115493,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.78030134862308,
+          "lower": 5.361244452060905,
+          "upper": 6.199358245185255,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016526984201375015,
+          "lower": 0.014599070520796247,
+          "upper": 0.018454897881953782,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.10553440079093,
+          "lower": 2.8629980165470195,
+          "upper": 3.34807078503484,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0276535680585865e-16,
+          "lower": 1.9200680160012792e-16,
+          "upper": 2.1352391201158937e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.749350733278349,
+          "lower": 4.696336919816675,
+          "upper": 4.802364546740023,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|risk N15": {
+      "conditions": [
+        "fixed_risk_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.332774939992586,
+          "lower": 9.683929366302875,
+          "upper": 10.981620513682296,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.023046114422128117,
+          "lower": 0.01778217151160967,
+          "upper": 0.028310057332646563,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.582812500000001,
+          "lower": 5.445686533287116,
+          "upper": 5.719938466712886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.786865882182197,
+          "lower": 5.311513971512511,
+          "upper": 6.262217792851883,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01629840206898222,
+          "lower": 0.014464093071840966,
+          "upper": 0.01813271106612347,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.373096540570259,
+          "lower": 3.1591864344086553,
+          "upper": 3.587006646731863,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.04598058389879e-16,
+          "lower": 1.9340537931317716e-16,
+          "upper": 2.1579073746658084e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.900097863804089,
+          "lower": 4.822905095712593,
+          "upper": 4.977290631895586,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|risk N20": {
+      "conditions": [
+        "fixed_risk_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.481090013484144,
+          "lower": 11.13350827546605,
+          "upper": 11.828671751502236,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.008395981625027193,
+          "lower": 0.005866949136995986,
+          "upper": 0.0109250141130584,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.897656250000001,
+          "lower": 5.707452604818975,
+          "upper": 6.087859895181026,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.450372534782793,
+          "lower": 4.278233083795346,
+          "upper": 4.62251198577024,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01120348482385605,
+          "lower": 0.009723013093151316,
+          "upper": 0.012683956554560786,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.6799734495580196,
+          "lower": 3.4940588571163462,
+          "upper": 3.865888041999693,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.9743990147130324e-16,
+          "lower": 1.8571021507531598e-16,
+          "upper": 2.091695878672905e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.097194668200883,
+          "lower": 5.015749600572811,
+          "upper": 5.1786397358289555,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|risk N30": {
+      "conditions": [
+        "fixed_risk_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 4.829023088164227,
+          "lower": 2.8645445771051863,
+          "upper": 6.793501599223268,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.005028953579979234,
+          "lower": 0.0030441391613440323,
+          "upper": 0.007013767998614436,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 9.361718749999998,
+          "lower": 8.364210364598762,
+          "upper": 10.359227135401234,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.676530347945475,
+          "lower": 4.494895607414824,
+          "upper": 4.858165088476126,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.009083354957601611,
+          "lower": 0.007657741745670078,
+          "upper": 0.010508968169533145,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.925155971199274,
+          "lower": 3.7555790662259336,
+          "upper": 4.094732876172615,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.2321642375522237e-16,
+          "lower": 2.080956938741697e-16,
+          "upper": 2.38337153636275e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.693965064158652,
+          "lower": 5.521304410017354,
+          "upper": 5.86662571829995,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|expectation N10": {
+      "conditions": [
+        "fixed_expectation_n10"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.725414430381221,
+          "lower": 10.237862535144734,
+          "upper": 11.212966325617709,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.07175995508788224,
+          "lower": 0.06079462976673483,
+          "upper": 0.08272528040902966,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.3734375000000005,
+          "lower": 5.298024804690532,
+          "upper": 5.448850195309469,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.816502837354857,
+          "lower": 5.391474234422496,
+          "upper": 6.241531440287218,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016674013706957154,
+          "lower": 0.014721907243350143,
+          "upper": 0.018626120170564163,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.105459112673998,
+          "lower": 2.862942641500107,
+          "upper": 3.3479755838478886,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.0293000214371134e-16,
+          "lower": 1.9212044526864882e-16,
+          "upper": 2.1373955901877386e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.7475606188609785,
+          "lower": 4.694724848649066,
+          "upper": 4.800396389072891,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|expectation N15": {
+      "conditions": [
+        "fixed_expectation_n15"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 10.337089547264943,
+          "lower": 9.689857292810148,
+          "upper": 10.984321801719739,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.023046114422128117,
+          "lower": 0.01778217151160967,
+          "upper": 0.028310057332646563,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.580468750000001,
+          "lower": 5.4447030228826705,
+          "upper": 5.716234477117332,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 5.786818289973974,
+          "lower": 5.311477968026296,
+          "upper": 6.262158611921652,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.016305461556934027,
+          "lower": 0.014470174308015777,
+          "upper": 0.01814074880585228,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.373096540570259,
+          "lower": 3.1591864344086553,
+          "upper": 3.587006646731863,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.036655201141629e-16,
+          "lower": 1.9225934971714296e-16,
+          "upper": 2.1507169051118283e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 4.899534286890745,
+          "lower": 4.822580400965434,
+          "upper": 4.976488172816056,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|expectation N20": {
+      "conditions": [
+        "fixed_expectation_n20"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 11.48108986093571,
+          "lower": 11.133508132021275,
+          "upper": 11.828671589850144,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.008395982025204862,
+          "lower": 0.0058669495102264355,
+          "upper": 0.010925014540183289,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 5.897656250000001,
+          "lower": 5.707452604818975,
+          "upper": 6.087859895181026,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.450372778092611,
+          "lower": 4.278233343296018,
+          "upper": 4.6225122128892036,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.01120348482385605,
+          "lower": 0.009723013093151316,
+          "upper": 0.012683956554560786,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.679973442107439,
+          "lower": 3.494058848473489,
+          "upper": 3.865888035741389,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 1.9893408800110512e-16,
+          "lower": 1.8743906364904419e-16,
+          "upper": 2.1042911235316605e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.0971945769992555,
+          "lower": 5.015749502480254,
+          "upper": 5.178639651518257,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    },
+    "intersection_stress|expectation N30": {
+      "conditions": [
+        "fixed_expectation_n30"
+      ],
+      "metrics": {
+        "discounted_task_return": {
+          "mean": 4.829220205293465,
+          "lower": 2.8647205438888244,
+          "upper": 6.7937198666981065,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "smooth_deficit_m": {
+          "mean": 0.005028953441736039,
+          "lower": 0.003044139033692938,
+          "upper": 0.00701376784977914,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "completion_time_s": {
+          "mean": 9.361718749999998,
+          "lower": 8.364210364598762,
+          "upper": 10.359227135401234,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "jerk_rms_mps3": {
+          "mean": 4.676229587630753,
+          "lower": 4.49459575271585,
+          "upper": 4.857863422545656,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "fallback_fraction": {
+          "mean": 0.009083354957601611,
+          "lower": 0.007657741745670078,
+          "upper": 0.010508968169533145,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "minimum_clearance_m": {
+          "mean": 3.9251559749245644,
+          "lower": 3.75557907071286,
+          "upper": 4.094732879136269,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "lateral_tracking_RMSE_m": {
+          "mean": 2.238909996149248e-16,
+          "lower": 2.0862579343958882e-16,
+          "upper": 2.3915620579026076e-16,
+          "n": 128,
+          "alpha": 0.05
+        },
+        "task_speed_RMSE_mps": {
+          "mean": 5.693993329042019,
+          "lower": 5.521335832651939,
+          "upper": 5.8666508254320995,
+          "n": 128,
+          "alpha": 0.05
+        }
+      }
+    }
+  },
+  "uncertainty": "Pointwise 95% t interval over 128 starts after within-start seed averaging. Formal paired contrasts retain their original Bonferroni families separately.",
+  "metric_directions": {
+    "discounted_task_return": "up",
+    "smooth_deficit_m": "down",
+    "completion_time_s": "down",
+    "jerk_rms_mps3": "down",
+    "fallback_fraction": "down",
+    "minimum_clearance_m": "up",
+    "lateral_tracking_RMSE_m": "down",
+    "task_speed_RMSE_mps": "down",
+    "success": "up",
+    "collision": "down",
+    "timeout": "down",
+    "road_departed": "down"
+  }
+}

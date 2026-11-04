@@ -1,0 +1,119 @@
+{
+  "release": "solver_r1",
+  "authorized_date": "2026-10-30",
+  "scope": "Fresh paired CarSim solver study; preserve all previous experiments and learner policies. No training or outcome-dependent solver selection.",
+  "methods": [
+    "shooting",
+    "cem",
+    "mppi",
+    "ltv"
+  ],
+  "display_names": {
+    "shooting": "Shooting",
+    "cem": "CEM",
+    "mppi": "Weighted MPPI",
+    "ltv": "LTV-QP"
+  },
+  "cells": [
+    "merge_nominal",
+    "merge_stress",
+    "intersection_nominal",
+    "intersection_stress"
+  ],
+  "horizons": [
+    10,
+    15,
+    20,
+    30
+  ],
+  "sample_time_s": 0.1,
+  "compact": {
+    "candidates": 16,
+    "sampling_iterations": 1,
+    "LTV_sequential_QPs": 2,
+    "starts_per_cell_N10": 128,
+    "starts_per_cell_other_horizons": 32
+  },
+  "refined": {
+    "horizon": 10,
+    "methods": [
+      "shooting",
+      "cem",
+      "mppi"
+    ],
+    "candidates": 32,
+    "sampling_iterations": 3,
+    "starts_per_cell": 32
+  },
+  "fixed_parameters": "Original per-scenario nominal weights, 1.5 m requested target, CVaR level 0.9; no policy or parameter tuning.",
+  "shared": [
+    "frozen vehicle model and limits",
+    "reactive SV branches and observed probabilities",
+    "first physical input shared across branches",
+    "exact SAT outcomes",
+    "nonlinear road/clearance/stopping audit",
+    "braking fallback",
+    "common task reward",
+    "original 512 physical starts"
+  ],
+  "adapter_scope": "Instantiate the unchanged sequence algorithms and EffectiveLTVBranchMPC directly for this separately audited comparison. The factory restricts the current clearance protocol to previously qualified shooting. Do not remove that production guard. Fixed nominal objectives and nonlinear post-audits retain the same configuration. LTV-QP uses its existing sequential convex surrogate and two QPs, not the sampling budget.",
+  "QP_settings": {
+    "sequential_QPs": 2,
+    "maximum_iterations_per_QP": 4000,
+    "absolute_tolerance": 0.0001,
+    "relative_tolerance": 0.0001,
+    "polishing": false,
+    "adaptive_rho_interval": 25,
+    "reason": "Freeze a deterministic residual-based update cadence instead of OSQP's wall-time-derived automatic interval; prevent parallel-load-dependent numerical changes."
+  },
+  "horizon_semantics": "Three normalized-time control segments and the unchanged summed horizon objective. Increasing N changes segment duration and objective accumulation; this is sensitivity of the deployed finite solver, not a rescaled continuous-time optimum.",
+  "weighted_MPPI_scope": "Feasibility-filtered weighted shooting with re-audited averaged controls; no classical diffusion likelihood correction or path-integral optimality claim.",
+  "primary_trajectories": 3968,
+  "isolated_replays": 152,
+  "starts_rule": "128 original entries per cell for compact N10; fixed first 32 entries for horizon/refinement. No outcome-selected subsampling. Two isolated starts (indices 0,1) per condition/cell; identical trajectory seeds.",
+  "CPU_candidates": [
+    1,
+    8,
+    12
+  ],
+  "CPU_repeats": 2,
+  "CPU_equal_work_tasks": 19,
+  "wall_clock_cutoff": null,
+  "outcomes": [
+    "success",
+    "collision",
+    "timeout",
+    "road_departure",
+    "return",
+    "smooth_deficit",
+    "minimum_SAT",
+    "jerk_RMS",
+    "capped_task_time",
+    "tracking_RMSE",
+    "fallback",
+    "native_QP_status",
+    "nonlinear_acceptance",
+    "residuals",
+    "model_error_and_slip"
+  ],
+  "timing": [
+    "isolated_decision_and_full_loop_p50_p95_p99_max",
+    "100_ms_miss_fraction_and_streaks",
+    "loaded_parallel_throughput",
+    "construction_in_cold_first_decision"
+  ],
+  "inference": {
+    "compact_N10_family": 60,
+    "horizon_family": 240,
+    "refinement_family": 60,
+    "metrics": [
+      "discounted_task_return",
+      "smooth_deficit_m",
+      "completion_time_s",
+      "jerk_rms_mps3",
+      "fallback_fraction"
+    ],
+    "interval": "Two-sided paired Student intervals with Bonferroni family alpha 0.05; no training-seed inference for fixed controllers."
+  },
+  "horizon_scope": "Fixed-controller finite-solver sensitivity. N20/30 are model-extrapolation stress; retain measured mismatch and adverse outcomes, without horizon-invariant or certified real-time claims."
+}

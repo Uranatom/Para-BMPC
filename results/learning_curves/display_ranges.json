@@ -1,0 +1,165 @@
+{
+  "rule": "Limits enclose all five smoothed seed means with 13% padding; confidence bands may be clipped. Constant 100% success is shown without artificial separation.",
+  "panels": [
+    {
+      "panel": 0,
+      "label": "Return $\\uparrow$",
+      "mean_min": 10.684516906738281,
+      "mean_max": 11.02695186138153,
+      "displayed_limits": [
+        10.640000362634659,
+        11.071468405485152
+      ]
+    },
+    {
+      "panel": 1,
+      "label": "Success (%) $\\uparrow$",
+      "mean_min": 100.0,
+      "mean_max": 100.0,
+      "displayed_limits": [
+        99.5,
+        100.1
+      ]
+    },
+    {
+      "panel": 2,
+      "label": "Nominal deficit (m) $\\downarrow$",
+      "mean_min": 0.07910352312028407,
+      "mean_max": 0.18507178127765656,
+      "displayed_limits": [
+        0.06532764955982565,
+        0.19884765483811498
+      ]
+    },
+    {
+      "panel": 3,
+      "label": "Boundary deficit (m) $\\downarrow$",
+      "mean_min": 0.29723241254687305,
+      "mean_max": 0.3190550704797109,
+      "displayed_limits": [
+        0.29439546701560415,
+        0.3218920160109798
+      ]
+    },
+    {
+      "panel": 4,
+      "label": "Min. SAT median (m) $\\uparrow$",
+      "mean_min": 1.9500000476837158,
+      "mean_max": 2.1768033385276793,
+      "displayed_limits": [
+        1.9205156198740005,
+        2.2062877663373945
+      ]
+    },
+    {
+      "panel": 5,
+      "label": "Jerk (m/s$^3$) $\\downarrow$",
+      "mean_min": 3.555244797468186,
+      "mean_max": 3.882731795310974,
+      "displayed_limits": [
+        3.5126714877486234,
+        3.9253051050305365
+      ]
+    },
+    {
+      "panel": 6,
+      "label": "Fallback (%) $\\downarrow$",
+      "mean_min": 0.7714088514565702,
+      "mean_max": 1.1269286982554305,
+      "displayed_limits": [
+        0.7251912713727184,
+        1.1731462783392823
+      ]
+    },
+    {
+      "panel": 7,
+      "label": "Clearance-critic loss",
+      "mean_min": 0.08332249213636604,
+      "mean_max": 1.0654752779023382,
+      "displayed_limits": [
+        0.0,
+        1.1931551400519145
+      ]
+    },
+    {
+      "panel": 8,
+      "label": "Return $\\uparrow$",
+      "mean_min": 9.36927318572998,
+      "mean_max": 9.568467712402343,
+      "displayed_limits": [
+        9.343377897262574,
+        9.59436300086975
+      ]
+    },
+    {
+      "panel": 9,
+      "label": "Success (%) $\\uparrow$",
+      "mean_min": 100.0,
+      "mean_max": 100.0,
+      "displayed_limits": [
+        99.5,
+        100.1
+      ]
+    },
+    {
+      "panel": 10,
+      "label": "Nominal deficit (m) $\\downarrow$",
+      "mean_min": 0.07980578988790513,
+      "mean_max": 0.08759418392071017,
+      "displayed_limits": [
+        0.07879329866364047,
+        0.08860667514497482
+      ]
+    },
+    {
+      "panel": 11,
+      "label": "Boundary deficit (m) $\\downarrow$",
+      "mean_min": 0.06975822951644658,
+      "mean_max": 0.07373576623698075,
+      "displayed_limits": [
+        0.06924114974277715,
+        0.07425284601065019
+      ]
+    },
+    {
+      "panel": 12,
+      "label": "Min. SAT median (m) $\\uparrow$",
+      "mean_min": 2.241141200065613,
+      "mean_max": 2.2577646374702454,
+      "displayed_limits": [
+        2.2389801532030105,
+        2.2599256843328477
+      ]
+    },
+    {
+      "panel": 13,
+      "label": "Jerk (m/s$^3$) $\\downarrow$",
+      "mean_min": 6.622070181369782,
+      "mean_max": 6.831158399581909,
+      "displayed_limits": [
+        6.594888713002206,
+        6.858339867949486
+      ]
+    },
+    {
+      "panel": 14,
+      "label": "Fallback (%) $\\downarrow$",
+      "mean_min": 0.7826794854181096,
+      "mean_max": 0.8208736115291002,
+      "displayed_limits": [
+        0.7777142490236808,
+        0.825838847923529
+      ]
+    },
+    {
+      "panel": 15,
+      "label": "Clearance-critic loss",
+      "mean_min": 0.22729535263802542,
+      "mean_max": 0.887951886877476,
+      "displayed_limits": [
+        0.14141000318689684,
+        0.9738372363286045
+      ]
+    }
+  ]
+}

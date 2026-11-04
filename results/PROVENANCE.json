@@ -1,0 +1,23 @@
+{
+  "scope": "Frozen CarSim outcomes and recorded training metrics; result reproduction does not run or reproduce learning.",
+  "source_hashes": [
+    "63b845f20fe62341cd68089d74d63dcb7b59ea9e728dad0e8bd67919eb7a44c9",
+    "8466df91d5513bee295ae409c24cd8bfd51cc57682750e8e8ed861b120eef265",
+    "12cae2571d9e1a6009adaf4b8137a61c291c247cd159364a74d969ffe49c2879",
+    "23568ac3f2c5867a6e2ac7657ebfed4308a28bb77c3568eabcc4509692f74b32",
+    "56ed759763e9b771843588fd5c2474c441524f6695e9cde750681205e4dd1898",
+    "ce1b9c6e184361f99dd19ab75189bc2e94d563fe28c18bcf66af7f115ade83c0",
+    "d5cf86b76a95811f4b877bfb765a9c4a959fb411150cfe5655ce03b767a0c94a",
+    "44800451a7e7d612450154b725760b4961573afe4df9e50bf07c92bad2289c8d",
+    "e1dacb58c47fe9d360129f81d8d429e2f21a4ae1e682311d3e08202c4e36b930",
+    "5108307f766691adb7785963e5e8da5085da67ab3d7624f9a504aa99634d14c1",
+    "849ee4f02d260ad1d8141e7fd8d92c10e79ec0a49720a601fb92cfaf29edf4b6"
+  ],
+  "outcomes": "All retained seeds and null/adverse outcomes are included.",
+  "rows": {
+    "controller_comparison": 6144,
+    "ablations": 16384,
+    "solver_horizon": 3968,
+    "deployment_diagnostics_merged": 6656
+  }
+}

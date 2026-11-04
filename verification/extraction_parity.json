@@ -1,0 +1,217 @@
+{
+  "baseline_cases": 26,
+  "matched_transition_steps": 78,
+  "measured_metric_values": 1000,
+  "numerical_parity": true,
+  "cases": [
+    {
+      "scenario": "merge",
+      "method": "fixed_nominal",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "fixed_tuned",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "fot_pid",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "era",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "branch",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "shooting",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "cem",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "mppi",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "ltv",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "fixed_nominal",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "fixed_tuned",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "fot_pid",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "era",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "branch",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "shooting",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "cem",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "mppi",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "ltv",
+      "horizon": 10,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "shooting",
+      "horizon": 15,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "shooting",
+      "horizon": 20,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "shooting",
+      "horizon": 30,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "shooting",
+      "horizon": 15,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "shooting",
+      "horizon": 20,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "shooting",
+      "horizon": 30,
+      "boundary": false,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "merge",
+      "method": "fixed_tuned",
+      "horizon": 10,
+      "boundary": true,
+      "steps": 3,
+      "parity": true
+    },
+    {
+      "scenario": "intersection",
+      "method": "fixed_tuned",
+      "horizon": 10,
+      "boundary": true,
+      "steps": 3,
+      "parity": true
+    }
+  ],
+  "scope": "Short deterministic common-model extraction checks; no training or CarSim rerun."
+}

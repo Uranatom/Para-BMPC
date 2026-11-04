@@ -1,0 +1,6 @@
+-r requirements-results.txt
+torch==2.9.0
+casadi==3.7.2
+ecos==2.0.14
+osqp==1.1.3
+pytest==8.4.2

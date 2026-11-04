@@ -1,0 +1,129 @@
+{
+  "selected": {
+    "merge": [
+      {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.1414213627576828,
+          1.0,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_merge_068"
+      }
+    ],
+    "intersection": [
+      {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.2,
+            2.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.2828427255153656,
+          2.8284270763397217,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_intersection_026"
+      }
+    ]
+  },
+  "changed_scenarios": {
+    "merge": true,
+    "intersection": false
+  },
+  "formal_results_used_for_selection": false,
+  "objective": "Maximize 0.75*nominal mean discounted task return + 0.25*boundary mean discounted task return, without extra deficit, failure, jerk or fallback ranking. Configuration id breaks exact ties. The unchanged task reward already includes its original safety and comfort terms."
+}

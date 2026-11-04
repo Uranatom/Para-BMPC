@@ -1,0 +1,78 @@
+{
+  "upper_rows": [
+    {
+      "method": "shooting",
+      "name": "Shooting",
+      "return_mean": 10.136333318950227,
+      "deficit_m": 0.16592847557871293,
+      "jerk_mps3": 4.754817716435004,
+      "success_pct": 100.0,
+      "acceptance_pct": 98.46094162910963,
+      "latency_range_ms": [
+        43.562544017331675,
+        46.22684094705619
+      ]
+    },
+    {
+      "method": "cem",
+      "name": "CEM",
+      "return_mean": 10.136333318950227,
+      "deficit_m": 0.16592847557871293,
+      "jerk_mps3": 4.754817716435004,
+      "success_pct": 100.0,
+      "acceptance_pct": 98.46094162910963,
+      "latency_range_ms": [
+        43.8213800592348,
+        46.84148695436306
+      ]
+    },
+    {
+      "method": "mppi",
+      "name": "Weighted MPPI",
+      "return_mean": 10.292920988716869,
+      "deficit_m": 0.17669808901342512,
+      "jerk_mps3": 4.457867192059862,
+      "success_pct": 100.0,
+      "acceptance_pct": 98.45313972399772,
+      "latency_range_ms": [
+        66.1684680369217,
+        72.73120002355427
+      ]
+    },
+    {
+      "method": "ltv",
+      "name": "LTV-QP",
+      "return_mean": -2.6613911546873124,
+      "deficit_m": 0.1211790711668379,
+      "jerk_mps3": 7.901871467547023,
+      "success_pct": 81.25,
+      "acceptance_pct": 80.67040384710448,
+      "latency_range_ms": [
+        239.24054999486543,
+        252.60576603584926
+      ]
+    }
+  ],
+  "lower_rows": {
+    "15": [
+      65.9141320316121,
+      65.5546460149344,
+      101.81814898271114,
+      356.16038453474175
+    ],
+    "20": [
+      85.75598705210723,
+      86.21228800620884,
+      133.4637095144717,
+      475.5496650194982
+    ],
+    "30": [
+      126.30303702142555,
+      126.84494649991393,
+      197.85679246590007,
+      718.9545730454847
+    ]
+  },
+  "aggregation": "Upper outcomes: descriptive means over 512 equally weighted starts (four equal-size cells). Acceptance averages trajectory fractions. Upper latency: range of four case-specific p99 values. Lower latency: median of four case-specific p99 values, never a pooled p99.",
+  "bold": "Best displayed rounded value and ties; upper latency minimizes the largest case p99. Lower latency compares medians within N."
+}

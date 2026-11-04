@@ -1,0 +1,15 @@
+{
+  "CVaR-TMPC": {
+    "repository": "https://github.com/chenyx09/belief-planning",
+    "commit": "2c889cf9f969f75eb069e7bbce66fb092939abe7"
+  },
+  "Era-BMPC": {
+    "repository": "https://github.com/Luyao787/Era-BMPC",
+    "commit": "8deae10e3ed3bd7199eaf635cb73fc444c8d6957"
+  },
+  "PythonRobotics": {
+    "repository": "https://github.com/AtsushiSakai/PythonRobotics",
+    "commit": "02141a6814d25e8b15e1a65a1d0328a8efc2b4a5",
+    "license": "MIT"
+  }
+}

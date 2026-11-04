@@ -1,0 +1,87 @@
+{
+  "method": "fot_pid",
+  "selected": {
+    "merge": [
+      {
+        "settings": {
+          "target_speed": 8.0,
+          "jerk_weight": 0.2,
+          "time_weight": 0.1,
+          "lateral_weight": 1.0,
+          "speed_weight": 1.0,
+          "clearance_margin": 0.5,
+          "speed_kp": 0.8,
+          "speed_ki": 0.05,
+          "speed_kd": 0.05,
+          "lateral_kp": 0.03,
+          "lateral_ki": 0.0005,
+          "heading_kp": 0.5,
+          "steering_gain": 6.0,
+          "times": [
+            3.0,
+            4.0,
+            5.0
+          ],
+          "speed_samples": [
+            0.0,
+            2.0,
+            4.0,
+            6.0,
+            8.0,
+            9.0
+          ]
+        },
+        "search_values": {
+          "jerk_weight": 0.2,
+          "clearance_margin": 0.5,
+          "target_speed": 8.0,
+          "speed_kp": 0.8
+        },
+        "configuration_id": "fot_pid_merge_014"
+      }
+    ],
+    "intersection": [
+      {
+        "settings": {
+          "target_speed": 8.0,
+          "jerk_weight": 0.05,
+          "time_weight": 0.1,
+          "lateral_weight": 1.0,
+          "speed_weight": 1.0,
+          "clearance_margin": 1.5,
+          "speed_kp": 0.8,
+          "speed_ki": 0.05,
+          "speed_kd": 0.05,
+          "lateral_kp": 0.03,
+          "lateral_ki": 0.0005,
+          "heading_kp": 0.5,
+          "steering_gain": 6.0,
+          "times": [
+            3.0,
+            4.0,
+            5.0
+          ],
+          "speed_samples": [
+            0.0,
+            2.0,
+            4.0,
+            6.0,
+            8.0,
+            9.0
+          ]
+        },
+        "search_values": {
+          "jerk_weight": 0.05,
+          "clearance_margin": 1.5,
+          "target_speed": 8.0,
+          "speed_kp": 0.8
+        },
+        "configuration_id": "fot_pid_intersection_010"
+      }
+    ]
+  },
+  "formal_results_used_for_selection": false,
+  "development_count": 768,
+  "confirmation_count": 96,
+  "selection_rule": "Per scene: collision and road failures, task failures, positive nominal/stress mean-deficit budget excess, mean discounted-return rank, mean jerk rank, fallback rank; configuration id breaks ties. Top three development configurations enter a disjoint confirmation set; its best whole configuration is frozen before formal assessment."
+}

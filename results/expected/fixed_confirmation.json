@@ -1,0 +1,615 @@
+{
+  "merge": [
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.1414213627576828,
+          1.0,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_merge_068"
+      },
+      "weighted_return": 10.57330130632198,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.933434618012429,
+        "nominal_smooth_deficit_m": 0.10512242388372872,
+        "stress_discounted_task_return": 9.492901371250635,
+        "stress_smooth_deficit_m": 0.28496290011935344
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          -1.0,
+          -1.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          0.8408964276313782,
+          0.8408964276313782,
+          0.3535533845424652,
+          1.4142135381698608,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.4142135381698608,
+          0.0707106813788414,
+          1.4142135381698608,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_merge_008"
+      },
+      "weighted_return": 10.565884350648133,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.900191915856237,
+        "nominal_smooth_deficit_m": 0.10457561739181731,
+        "stress_discounted_task_return": 9.56296165502383,
+        "stress_smooth_deficit_m": 0.28495181948164827
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          -1.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.3535533845424652,
+          1.4142135381698608,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.4142135381698608,
+          0.0707106813788414,
+          1.4142135381698608,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_merge_017"
+      },
+      "weighted_return": 10.565115144697893,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.900191915856237,
+        "nominal_smooth_deficit_m": 0.10457561739181731,
+        "stress_discounted_task_return": 9.559884831222865,
+        "stress_smooth_deficit_m": 0.28495181948164827
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.1892070770263672,
+          1.1892070770263672,
+          0.5946035385131836,
+          1.4142135381698608,
+          0.10000000149011612,
+          1.0,
+          0.5,
+          1.4142135381698608,
+          0.10000000149011612,
+          1.4142135381698608,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_merge_134"
+      },
+      "weighted_return": 10.525607786681704,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.867594056888144,
+        "nominal_smooth_deficit_m": 0.12120712377523635,
+        "stress_discounted_task_return": 9.499648976062382,
+        "stress_smooth_deficit_m": 0.28495181948164827
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          0.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        "constant_parameters": [
+          1.1892070770263672,
+          1.1892070770263672,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.04000000283122063
+        ],
+        "configuration_id": "fixed_merge_049"
+      },
+      "weighted_return": 10.511216145674998,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.834027403671476,
+        "nominal_smooth_deficit_m": 0.1980402461851165,
+        "stress_discounted_task_return": 9.542782371685568,
+        "stress_smooth_deficit_m": 0.28495222575111256
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.5
+        ],
+        "constant_parameters": [
+          1.1892070770263672,
+          1.1892070770263672,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.1414213627576828,
+          1.0,
+          0.04000000283122063
+        ],
+        "configuration_id": "fixed_merge_076"
+      },
+      "weighted_return": 10.490759475116153,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.823498120293532,
+        "nominal_smooth_deficit_m": 0.20579361092691872,
+        "stress_discounted_task_return": 9.492543539584023,
+        "stress_smooth_deficit_m": 0.2849525258116046
+      }
+    }
+  ],
+  "intersection": [
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.2,
+            2.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.2828427255153656,
+          2.8284270763397217,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_intersection_026"
+      },
+      "weighted_return": 10.863663961719906,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.812452396135878,
+        "nominal_smooth_deficit_m": 0.10344723286107183,
+        "stress_discounted_task_return": 11.017298658471992,
+        "stress_smooth_deficit_m": 0.08220729020821693
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.2,
+            2.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          0.0,
+          -1.0,
+          1.0,
+          1.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.5,
+          1.0,
+          0.2828427255153656,
+          2.8284270763397217,
+          0.03333333507180214
+        ],
+        "configuration_id": "fixed_intersection_035"
+      },
+      "weighted_return": 10.829481236971498,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.796530541716136,
+        "nominal_smooth_deficit_m": 0.10929304314777255,
+        "stress_discounted_task_return": 10.928333322737586,
+        "stress_smooth_deficit_m": 0.08220729020821693
+      }
+    },
+    {
+      "configuration": {
+        "controller": {
+          "horizon": 10,
+          "confidence": 0.9,
+          "candidates": 16,
+          "cem_iterations": 1,
+          "safety_margin_m": 0.5,
+          "constraint_penalty": 500.0,
+          "fallback_violation_m": 0.2,
+          "base_parameters": [
+            1.0,
+            1.0,
+            0.5,
+            1.0,
+            0.1,
+            1.0,
+            0.5,
+            1.0,
+            0.2,
+            2.0,
+            0.05
+          ],
+          "interaction_version": "v6",
+          "controller_version": "v7",
+          "warm_start": true,
+          "explicit_seeds": true,
+          "feasibility_first": true,
+          "release_reference": true,
+          "jerk_weight": 1.0,
+          "road_corridor": true,
+          "lateral_reference_protocol": "quintic40_curvature_feedback_v1",
+          "effective_action_protocol": "neutral_bounded_v4",
+          "clearance_recovery_protocol": "nominal_gate_objective_v6",
+          "clearance_recovery_rate_mps": 0.05,
+          "planner_seed_protocol": "legacy_v1"
+        },
+        "constant_tuner_action": [
+          -1.0,
+          1.0,
+          1.0,
+          0.0
+        ],
+        "constant_parameters": [
+          1.0,
+          1.0,
+          0.4204482138156891,
+          1.0,
+          0.10000000149011612,
+          1.0,
+          0.3535533845424652,
+          1.0,
+          0.2828427255153656,
+          2.8284270763397217,
+          0.05000000074505806
+        ],
+        "configuration_id": "fixed_intersection_024"
+      },
+      "weighted_return": 10.818364533701287,
+      "observed_failures": 0,
+      "means": {
+        "nominal_discounted_task_return": 10.752053158777716,
+        "nominal_smooth_deficit_m": 0.14067650819197297,
+        "stress_discounted_task_return": 11.017298658471992,
+        "stress_smooth_deficit_m": 0.08220729020821693
+      }
+    }
+  ]
+}
