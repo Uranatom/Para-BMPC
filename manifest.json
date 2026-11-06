@@ -1,12 +1,12 @@
 {
   "schema": "review_release_v1",
-  "visibility": "private",
+  "visibility": "public",
   "publication_stage": "review-stage partial release",
   "sha256": {
     ".gitattributes": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
     ".gitignore": "e1e14b3b839e99a120891ca22411842a39c3a21aa02c80863f5a69ee11821d2c",
     "analysis/reproduce.py": "36a42eb75189283daf2c70b321b5be2ef0b6d8eca61df1a2448236d9dd614a82",
-    "CITATION.cff": "86a5ed2b8a1d7e8badae029efc738102c077d2e4b5cfe29af4a0219558046d64",
+    "CITATION.cff": "cdd33c5244ed4954fa221a7c095e7dead2bd0a14eabcf6fa9aaddfd5df89312e",
     "configs/ablation_conditions.json": "9839bfa7db0b710d7d2f426c0bc1e6690ddc94dc3c0ed3f1b1f849daa3c24c24",
     "configs/branch_intersection.json": "1e23a2af0bbc94efde5f9217ba3ddcb97f1bb69d8bd395c88ca36a162eb79003",
     "configs/branch_merge.json": "9c434ab8191c0c3857cc014d04e2990464009869ec454a909b8cd15af6d08e72",
@@ -24,7 +24,7 @@
     "configs/starts/merge_stress.json": "4ba51b56b798fd47c4920149d64593d7648849a8be05ab7ee895b9b481a696c8",
     "configs/upstream_sources.json": "836d33110eb456d24d8137582cabac9f3ef84457d2f775632e10b024be28f145",
     "DATA_AVAILABILITY.md": "c1a399560f58fb28b58edd8d1242a3718bca0b6e303bfe597956272631194b4a",
-    "LICENSE": "63f41c0a2316eed789afd1161a5372fa07e07f9dfab6fe4deab245514ba4993b",
+    "LICENSE": "4d744d67f015bb49621f4b3ffcf7d59963913f97b03f22091be7663be2c32b33",
     "paper_figures/fig04_horizon.pdf": "c1fe635582025618488f8550a17eaee461a6aeb045ae932017a57699a08b2178",
     "paper_figures/fig05_learning.pdf": "4f965ea7dd6ec338cf47d3b28d5bfd3a27b6e5f1de39368ca75c61e780bf082c",
     "paper_figures/fig06_action_ablation.pdf": "38e81bab7169b7c7fddcbe0df88c99263cc9ef619de6b5286f30cfb4c5e00eb4",
@@ -32,8 +32,8 @@
     "paper_figures/fig08_performance.pdf": "96fdc85c769cbe40d2c01cc334d7f7a94bc0b72eb79a5e6d46fc40f0b11bca61",
     "paper_figures/fig09_latency.pdf": "c84278cf60881ea1b1edd6b9414b59f5884b9e45c8ae8b3d50797fd1d6f1e3d3",
     "pyproject.toml": "e00b5b9036215d9a61d02e5b66a45eff40ca655e938dc9dea68f85831fc8dd1c",
-    "README.md": "e9bcf4fdc2d68e9f9535ddb28d8cb4f6267e1af0b089b96a01e16cdfb237890e",
-    "RELEASE_SCOPE.md": "b122b62049e4bc4fb1a83d8c6124b70cfcfb1eb7da00f33f5e74538e35d47d4f",
+    "README.md": "8b813ce3ac986dbed61cb1e778e96c615172a59e3fca5ae217f3d81d71d4143f",
+    "RELEASE_SCOPE.md": "acdfecbf1d0baadf97d39f4ef5b3963b48a65d9d65f9644da9299555addf303e",
     "requirements-baselines.txt": "dc99e6de7d81a215a79252164451af12465e13684fdf06bdeb24846cf65cf763",
     "requirements-results.txt": "8a298286ccf9a500c8a299a8dc0a40d09ad40182ee7099ecf88dfef9740a8829",
     "results/ablations/all_timing.csv": "6e9dc60fe4db73b27dc28102a43c4ff6d165ff123de599fabe6fe20a26f0cb87",
@@ -95,5 +95,6 @@
     "third_party/PythonRobotics/utils/plot.py": "ce61c7cfa774bcb948eb9ada1bee69f4ad559bc48d213a090d16162d1091a141",
     "THIRD_PARTY.md": "3002918a260864a68ad6ab6bc913d7e27cd8bea5e2901b940e77fbd0f3761e08",
     "verification/extraction_parity.json": "fd0a5941f31be68964d47fb5b65e1a8187671beaa4deb9138d9255c67f73528c"
-  }
+  },
+  "license": "MIT (author-owned materials; third-party licenses retained)"
 }

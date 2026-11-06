@@ -2,7 +2,7 @@
 
 Review-stage partial release for **Parameter-Adaptive Risk-Aware Branch Model Predictive Control for Interactive Autonomous Driving via Reinforcement Learning**.
 
-This repository is private during review. Access requires authorization from the authors. It provides frozen benchmark results, result-reproduction scripts and baseline implementations. The complete author-developed training/evaluation code, trained policies, configurations and supporting reproducibility materials will be released after publication. Third-party components retain their original licenses; CarSim requires a separate license.
+This repository is publicly available. The author-owned materials included here are open source under the MIT License; no prior permission from the authors is required to access, use, modify or redistribute them under that license. This review-stage partial release provides frozen benchmark results, result-reproduction scripts and baseline implementations. The complete author-developed training/evaluation code, trained policies, configurations and supporting reproducibility materials will be released after publication. Third-party components retain their original licenses; CarSim requires a separate license.
 
 ## What can be reproduced now
 

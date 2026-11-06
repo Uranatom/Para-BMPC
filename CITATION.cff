@@ -3,7 +3,8 @@ message: "Please cite the associated manuscript when using these review material
 type: software
 title: "Para-BMPC review materials"
 version: "0.1.0"
-date-released: "2026-11-04"
+date-released: "2026-11-06"
+license: MIT
 repository-code: "https://github.com/Uranatom/Para-BMPC"
 authors:
   - family-names: Cheng
